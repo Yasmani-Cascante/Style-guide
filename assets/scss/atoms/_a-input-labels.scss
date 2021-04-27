@@ -1,0 +1,29 @@
+
+.a-input__label {
+  color: $black;
+  cursor: pointer;
+  margin: 1rem 0;
+  white-space: nowrap;
+// ...to align the label of my textarea...
+  &--align {
+    align-self: start;
+    // margin-top: 2rem;
+  }
+  &--no-hover {
+    &:hover {
+      cursor: default;
+    }
+  }
+}
+
+
+/*-------------------------------
+ * Media Querys
+ *------------------------------- */
+ /* Tablet */
+ @include tablet {
+    .a-input__label {
+      flex: 1 0 18rem;
+      // margin-right: 13rem;
+    }
+  }

@@ -1,0 +1,20 @@
+/*==============================
+ *  Molecules - Add Comment
+ *============================== */
+.m-add-comment {
+  display: flex;
+  .m-form {
+    width: 100%;
+  }
+  .m-form__row {
+    max-width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    .a-input__label {
+      flex: none;
+    }
+    .a-text-area {
+      flex: 1 0 auto;
+    }
+  }
+}

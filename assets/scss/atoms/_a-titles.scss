@@ -1,0 +1,19 @@
+/*=============================
+ * Atoms - Title
+ *=============================*/
+
+.a-title,
+%a-title {
+  color: $black;
+  margin: 0;
+  text-transform: capitalize;
+}
+
+// A midpoint between h1 and h2
+// h1(4.8) - h2(3.6) = 1.2/2 = 0.6 + h2(3.6) = 4.2
+$post-title: 4.2rem;
+
+.a-post-title {
+  font-size: $post-title;
+  text-transform: none;
+}

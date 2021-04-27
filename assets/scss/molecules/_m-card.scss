@@ -1,0 +1,192 @@
+
+/*  ============================
+ CARD
+ ============================ */
+.m-cards::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+.m-cards {
+@extend %h-bare-list;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-flow: row wrap;
+     -moz-box-orient: horizontal;
+     -moz-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+}
+.m-card {
+  float: left;
+  -webkit-border-radius: 3px;
+     -moz-border-radius: 3px;
+          border-radius: 3px;
+  -webkit-box-shadow: 0px 0px 10px rgba(0,0,0, 0.14);
+     -moz-box-shadow: 0px 0px 10px rgba(0,0,0, 0.14);
+          box-shadow: 0px 0px 10px rgba(0,0,0, 0.14);
+  margin: 0 0 3.2rem 0;
+  font-size: 1rem; /*10px*/
+}
+
+.m-card__thumb {
+  // font-size: 1.rem;
+  position: relative;
+  text-decoration: none;
+  /* color: $white; */
+  display: block;
+
+  img {
+   width: 100%;
+   display: block;
+   border-top-left-radius: 3px;
+   border-top-right-radius: 3px;
+ }
+
+ .m-card__intro {
+   padding: 1.6em;
+   position: absolute;
+   bottom: 0;
+   left: 0;
+   right: 0;
+
+   .m-card__title{
+     font-size: 2em;
+     color: $white;
+     margin: 0;
+   }
+
+   .m-card__subtitle {
+     font-size: 1.5em;
+     color: $gray-3;
+   }
+ }
+
+.m-card__thumb__owner {
+  font-size: 1.3em;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: $primary-color;
+  color: $white;
+  margin: 1.6rem 1.6rem 0 0;
+  text-transform: uppercase;
+  // font-size: 1.5rem;
+  padding: 0.3rem 1rem;
+  border-radius: 3px;
+}
+
+}
+
+/*  card footer w/buttons
+ ------------------------------ */
+ .m-card__footer {
+   display: flex;
+   align-items: center;
+   border-top: 1px solid #bbc1b6;
+   // padding: 1.6rem 0 1.6rem 1.6rem;
+   padding: 1.6em;
+    // height: 100%;
+    // .a-icon {
+    //   fill: $primary-color;
+    // }
+    &__date {
+      margin: 0;
+      text-transform: uppercase;
+    }
+ }
+
+.m-card__form__footer {
+  display: flex;
+  align-items: center;
+  border-top: 1px solid #bbc1b6;
+}
+
+ .m-card__form__footer .a-btn {
+   display: flex;
+   // justify-content: center;
+   align-items: center;
+  padding: 1.4em;
+   border: none;
+   -webkit-border-radius: 0;
+      -moz-border-radius: 0;
+           border-radius: 0;
+           &:hover,
+           &:focus,
+           &:active {
+             background-color: $gray-4;
+             color: $primary-color;
+             text-decoration: none;
+           }
+ }
+
+ .m-card__form__footer .a-btn--like {
+    border-right: 1px solid #bbc1b6;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 0 auto;
+       -moz-box-flex: 1;
+        -ms-flex: 1 0 auto;
+            flex: 1 0 auto;
+    text-align: left;
+ }
+
+
+ /* ============================
+  Media Queries
+ =============================== */
+
+/* tablets */
+@include tablet {
+  .m-cards {
+    // margin-right: -$pulse-2x;
+    margin: 0 -3.2rem -3.2rem 0;
+  }
+
+ .m-card {
+    float: left;
+    margin-right: $pulse-2x;
+    /* margin: 0 $pulse $pulse 0; */
+    width: -webkit-calc(50% - #{$pulse-2x});
+    width: -moz-calc(50% - #{$pulse-2x});
+    width: calc(50% - #{$pulse-2x});
+
+    display: -webkit-box;
+
+    display: -webkit-flex;
+
+    display: -moz-box;
+
+    display: -ms-flexbox;
+
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+       -moz-box-orient: vertical;
+       -moz-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+       -moz-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+/* Desktops */
+@include desktop {
+  .m-cards .m-card {
+  width: -webkit-calc(33.33% - #{$pulse-2x});
+  width: -moz-calc(33.33% - #{$pulse-2x});
+  width: calc(33.33% - #{$pulse-2x});
+  // width: 30%;
+
+  }
+
+}

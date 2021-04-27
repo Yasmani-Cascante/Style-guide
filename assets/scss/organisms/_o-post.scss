@@ -1,0 +1,31 @@
+/*============================
+ * Organisms - Post
+ *=============================*/
+.o-post {
+  // For the purpose of centering it vertically on the masthead
+  margin: 0 0 1.4rem 0;
+}
+
+.m-post__img {
+  margin-bottom: $pulse;
+}
+
+.m-post-info-wrapper {
+  .m-post__description {
+    margin-top: 3.2rem;
+  }
+}
+
+/* Desktop */
+@include desktop {
+
+  .o-post {
+    display: flex;
+  }
+
+  .m-post__img {
+    width: 100%;
+    margin: 0 $pulse-2x 0 0;
+  }
+
+}

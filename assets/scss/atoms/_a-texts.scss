@@ -1,0 +1,21 @@
+
+/*==============================
+ * Atoms - Text
+ *============================== */
+
+ .a-text,
+  %a-text {
+ color: $black;
+ cursor: default;
+ margin: 0;
+ }
+
+.a-text--error {
+@extend %a-text;
+color: $secondary-color;
+}
+
+.a-text--hint {
+  @extend %a-text;
+  color: $gray-3;
+}

@@ -1,0 +1,25 @@
+/*==============================
+ *  Post Title Module
+ *============================== */
+.m-post__title {
+  font-size: 1rem;
+  margin-bottom: 3.2rem;
+}
+
+.m-post__title--desktop {
+  display: none;
+}
+
+/* Desktop */
+@include desktop {
+
+  // Hidding responsive Post header
+  .m-post__title--responsive {
+     display: none;
+  }
+
+  // Showing desktop Post header
+  .m-post__title--desktop {
+     display: block;
+   }
+}

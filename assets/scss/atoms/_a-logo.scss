@@ -1,0 +1,22 @@
+/*-----------------------------
+ * Logo
+ *----------------------------*/
+
+.a-logo {
+  @extend %h-no-underline-text;
+ font-style: normal;
+ // float: left;
+  // margin-right: 1.6rem;
+
+  &__text {
+    font-size: 1.8em;
+    color: #192127;
+    font-style: normal;
+    font-weight: bold;
+    white-space: nowrap;
+    & em {
+      color: $primary-color;
+      font-style: normal;
+    }
+  }
+}

@@ -1,0 +1,17 @@
+/* ------------------------------
+ * BASE
+ * --------------------------- */
+html,
+%html{
+// font-family: 'Rubik', helvetica, arial, sans-serif;
+font-family: "Rubik", sans-serif;
+font-size: 62.5%;
+line-height: $base-line-height;
+}
+
+body {
+color: $gray-1;
+background: $white;
+margin: 0;
+padding: 0;
+}

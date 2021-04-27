@@ -1,0 +1,108 @@
+/*==============================
+ *   Forms section
+ *============================== */
+
+  /*-----------------------------
+   * Form layout
+   *----------------------------*/
+
+   .m-form {
+     color: $gray-1;
+     font-size: 1rem;
+      // max-width: 64rem;
+     &__row {
+      display: flex;
+      margin: 2rem 0;
+      flex-direction: column;
+
+      .input-note {
+        color: $gray-2;
+        position: relative;
+        margin-top: 1rem;
+      }
+   }
+
+    &__footer {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      margin: 2rem 0 0 0;
+      .a-link--primary {
+          flex: 1 0 10rem;
+          // margin-right: 4rem;
+        }
+        .a-btn-primary {
+          width: 100%;
+        }
+    }
+
+    .a-text--hint {
+       display: block;
+       margin-top: 1rem;
+    }
+    .m-form_input-note {
+      width: 100%;
+    }
+}
+
+.m-form__checkbox-password {
+    // @extend %m-form__row;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+
+  /*-------------------------------
+   * Media Querys
+   *------------------------------- */
+
+   /* Tablets */
+   @include tablet {
+      // .btn--outlined {
+      //   width: 12em;
+      // }
+      .m-form {
+        &__btn-login {
+          margin-left: 18rem;
+        }
+        .m-form__row {
+          flex-direction: row;
+          justify-content: space-between;
+          // flex-wrap: nowrap;
+        }
+        .a-text--error {
+          margin-left: 18rem;
+        }
+      }
+
+      .m-form__checkbox-password {
+        margin-left: 18rem;
+      }
+      .m-form__footer {
+        .a-link--primary {
+          flex: 1 0 18rem;
+          // margin-right: 13rem;
+        }
+      }
+    }
+
+    /* Desktops */
+    @include desktop {
+      .m-form__row {
+        max-width: 52rem;
+      }
+
+     .a-text--hint {
+        white-space: nowrap;
+     }
+
+     .m-form__checkbox-password {
+         max-width: 34rem;
+     }
+
+     .m-form__footer {
+        max-width: 52rem;
+     }
+
+   }

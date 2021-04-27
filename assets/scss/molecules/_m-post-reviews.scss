@@ -1,0 +1,24 @@
+/*=============================
+ * Molecules - tags
+ *=============================*/
+
+.m-post__review {
+@extend %h-bare-list;
+  &::after {
+    clear: both;
+    display: table;
+    content: '';
+  }
+  & li {
+    float: left;
+    padding: 0 0.5em 0 0.5em;
+    border-right: 2px solid #e3e5e9;
+    color: #afbac4;
+    &:first-child {
+      padding-left: 0;
+    }
+    &:last-child {
+      border-right: none;
+    }
+  }
+}

@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Style Guide</title>
+
+  <!-- [if !IE]><!-->
+  <link href="https://fonts.googleapis.com/css?family=Rubik:400,400i,700,700i" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styleguide.css">
+  <!--[endif]-->
+
+  <!-- [if IE]>
+      <link rel="stylesheet" href="assets/css/universal-ie9-css.css">
+    <![endif]-->
+
+</head>
+
+<body>
+  <!-- SVG Files -->
+  <svg style="display: none;">
+    <defs>
+      <symbol id="icon-done" class="off">
+        <path d="M0 0h24v24H0z" fill="none" />
+        <path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z" />
+      </symbol>
+      <symbol id="icon-add" class="off">
+        <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" />
+        <path d="M0 0h24v24H0z" fill="none" />
+      </symbol>
+      <symbol id="icon-delete" class="off">
+        <path d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z" />
+        <path d="M0 0h24v24H0z" fill="none" />
+      </symbol>
+      <symbol id="icon-search" class="off">
+        <path
+          d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z" />
+        <path d="M0 0h24v24H0z" fill="none" />
+      </symbol>
+      <symbol id="icon-clear" class="off">
+        <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z" />
+        <path d="M0 0h24v24H0z" fill="none" />
+      </symbol>
+      <symbol id="icon-favorite" class="off">
+        <path d="M0 0h24v24H0z" fill="none" />
+        <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
+      </symbol>
+      <symbol id="icon-create" class="off">
+        <path d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.39-.39-1.02-.39-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z" />
+        <path d="M0 0h24v24H0z" fill="none" />
+      </symbol>
+      <symbol id="icon-menu" class="off">
+        <path d="M0 0h24v24H0z" fill="none" />
+        <path d="M3 20h20v-2H3v2zm0-5h20v-2H3v2zm0-7v2h20V6H3z" />
+      </symbol>
+      <symbol id="icon-date-range" class="off">
+        <path d="M9 11H7v2h2v-2zm4 0h-2v2h2v-2zm4 0h-2v2h2v-2zm2-7h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V9h14v11z" />
+        <path d="M0 0h24v24H0z" fill="none" />
+      </symbol>
+    </defs>
+  </svg>
+
+  <!-- Header -->
+  <header class="t-home__banner">
+    <!-- <div class="global-header"> -->
+    <div class="t-home__wrapper h-flex-wrapper">
+      <div class="a-logo">
+        <a href="/"><span class="a-logo__text"><em>My</em> Bucket List - Style Guide</span></a>
+      </div>
+      <nav>
+        <ul class="t-home__nav">
+          <li><a href="index.html">Atoms</a></li>
+          <li><a href="molecules.html">Molecules</a></li>
+          <li><a href="organisms.html">Organisms</a></li>
+          <li><a href="templates.html">Templates</a></li>
+          <li><a href="pages.html">Pages</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- main content -->
+  <main class="t-home__body">
+    <div class="t-home__wrapper">
+      <h1>Pages</h1>
+      <ol class="t-home__menu">
+        <li><a class="t-home__menu__links" href="#login">Login</a></li>
+        <li><a class="t-home__menu__links" href="#create-goal">Create Goal</a></li>
+        <li><a class="t-home__menu__links" href="#idea-discussion">Idea Discussion</a></li>
+        <li><a class="t-home__menu__links" href="#my-goals">My Goals</a></li>
+        <li><a class="t-home__menu__links" href="#user-followers">User Followers</a></li>
+      </ol>
+    <!-- </div> -->
+
+    <!-- Log In -->
+    <article id="idea-discussion" class="t-home__section">
+      <h2>01. Login</h2>
+
+      <!-- Banner -->
+      <div class="t-banner">
+
+        <!-- Global header -->
+        <div class="o-global-header">
+          <div class="t-content-wrapper h-flex-wrapper">
+            <div class="o-global-header__logo-search-wrapper">
+              <div class="a-logo">
+                <a href="/"><span class="a-logo__text"><em>My</em> Bucket List </span></a>
+              </div>
+
+              <form class="m-form" action="#" method="post">
+                <div class="m-search-input__row">
+                  <input class="a-input__field m-search-input__field" type="text" name="search" placeholder="E.g. Swimming with dolphins" />
+                  <button class="a-btn-primary" type="submit">Search</button>
+                </div>
+              </form>
+            </div>
+
+            <nav>
+              <ul class="m-nav-menu">
+                <li> <a href="#">Inspiration </a> </li>
+                <li> <a href="#">Sign up </a> </li>
+                <li> <a href="#">Log In </a> </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+
+        <!-- Masthead -->
+        <div class="o-masthead">
+          <div class="t-content-wrapper">
+             <h1 class="a-title">Log in</h1>
+          </div>
+      </div>
+    </div>
+      <!-- Body -->
+      <div class="t-content-wrapper">
+        <form class="m-form" action="index.html" method="post">
+          <div class="m-form__row">
+            <label  class="a-input__label" for="email-input">Email</label>
+            <input class="a-input__field" id="email-input" type="text" name="email-input" placeholder="E.g. Ride a camel">
+          </div>
+          <div class="m-form__row">
+            <label  class="a-input__label" for="pwd-input">Password</label>
+            <input class="a-input__field" id="pwd-input" type="password" name="pwd-input">
+          </div>
+          <div class="m-form__row m-form__checkbox-password">
+            <label class="a-checkbox" for="checkbox"> Remember me
+              <input class="a-checkbox__input" id="checkbox" type="checkbox">
+              <svg class="a-checkbox__icon" height="20" viewBox="0 0 24 24" width="20">
+                <use xlink:href="#icon-done"></use>
+              </svg>
+            </label>
+            <a class="a-link--primary" href="#" >Forgot password?</a>
+          </div>
+          <div class="m-form__footer">
+            <button class="a-btn-primary m-form__btn-login" type="button">Log in</button>
+          </div>
+        </form>
+      </div>
+      <!-- Footer -->
+      <div class="o-footer">
+        <div class="t-content-wrapper">
+          <div class="o-footer__list">
+            <ul class="m-nav-menu">
+              <li class="a-logo"><a href="/"><span class="a-logo__text"><em>My</em>Bucket List</span></a></li>
+              <li> <a href="#">About </a> </li>
+              <li> <a href="#">Style Guide </a> </li>
+              <li> <a href="#">Terms of Use </a> </li>
+            </ul>
+            <p class="copyrights">&copy; EPFL 2021 </p>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <!-- Log In -->
+    <article id="idea-discussion" class="t-home__section">
+      <h2>02. Create Goal</h2>
+
+      <!-- Banner -->
+      <div class="t-banner">
+
+        <!-- Global header -->
+        <!-- Global header -->
+        <div class="o-global-header">
+          <div class="t-content-wrapper h-flex-wrapper">
+            <div class="o-global-header__logo-search-wrapper">
+              <div class="a-logo">
+                <a href="/"><span class="a-logo__text"><em>My</em> Bucket List </span></a>
+              </div>
+
+              <form class="m-form" action="#" method="post">
+                <div class="m-search-input__row">
+                  <input class="a-input__field m-search-input__field" type="text" name="search" placeholder="E.g. Swimming with dolphins" />
+                  <button class="a-btn-primary" type="submit">Search</button>
+                </div>
+              </form>
+            </div>
+
+            <nav>
+              <ul class="m-nav-menu">
+                <li> <a href="#">Inspiration </a> </li>
+                <li> <a href="#">Sign up </a> </li>
+                <li> <a href="#">Log In </a> </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+
+        <!-- masthead -->
+        <div class="o-masthead">
+          <div class="t-content-wrapper">
+             <h1 class="a-title">Create Goal</h1>
+          </div>
+        </div>
+      </div>
+
+      <div class="t-content-wrapper">
+        <form class="m-form" action="index.html" method="post">
+          <p class="a-text--error">Please add an image and tags to create your goal</p>
+          <div class="m-form__row">
+            <label  class="a-input__label" for="text-input">Title</label>
+            <input class="a-input__field" id="text-input" type="text" name="text-input" placeholder="E.g. Ride a camel">
+          </div>
+          <div class="m-form__row">
+            <span class="a-input__label">Add an image</span>
+            <input type="file" id="image_uploads" class="h-sr-only" name="image_uploads" accept=".jpg, .jpeg, .png" placeholder="Choosefile">
+
+            <div class="m-form_input-note">
+              <label for="image_uploads" class="a-input__field--label a-input__field--error">Choose file</label>
+              <p class="a-text--hint">Your image will be displayed at a 4:3 aspect ratio, cropped if necessary. 5MB limit</p>
+            </div>
+          </div>
+
+          <div class="m-form__row">
+            <label class="a-input__label" for="tag-input">Add tags</label>
+            <input class="a-input__field a-input__field--error" id="tag-input" type="text" name="tag-input" placeholder="Separate multiple tags with commas">
+          </div>
+          <div class="m-form__row">
+            <label for="text-area" class="a-input__label a-input__label--align">Description</label>
+            <textarea id="text-area" class="a-text-area" name="name" rows="5" cols="35" maxlength="500" placeholder="Optional 500 characters max"></textarea>
+          </div>
+          <div class="m-form__footer">
+            <a class="a-link--primary" href="#" >Cancel</a>
+            <button class="a-btn-primary" type="button">Create goal</button>
+          </div>
+        </form>
+      </div>
+
+      <!-- Footer -->
+      <div class="o-footer">
+        <div class="t-content-wrapper">
+          <div class="o-footer__list">
+            <ul class="m-nav-menu">
+              <li><a href="/"><span class="a-logo__text"><em>My</em>Bucket List</span></a></li>
+              <li> <a href="#">About </a> </li>
+              <li> <a href="#">Style Guide </a> </li>
+              <li> <a href="#">Terms of Use </a> </li>
+            </ul>
+            <p class="copyrights">&copy; EPFL 2021 </p>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <!-- Idea Discussion -->
+    <article id="idea-discussion" class="t-home__section">
+      <h2>02. Idea Discussion</h2>
+
+      <!-- Banner -->
+      <div class="t-banner">
+
+        <!-- Global header -->
+        <div class="o-global-header">
+          <div class="t-content-wrapper h-flex-wrapper">
+            <div class="o-global-header__logo-search-wrapper">
+              <div class="a-logo">
+                <a href="/"><span class="a-logo__text"><em>My</em> Bucket List </span></a>
+              </div>
+
+              <form class="m-form" action="#" method="post">
+                <div class="m-search-input__row">
+                  <input class="a-input__field m-search-input__field" type="text" name="search" placeholder="E.g. Swimming with dolphins" />
+                  <button class="a-btn-primary" type="submit">Search</button>
+                </div>
+              </form>
+            </div>
+
+            <nav>
+              <ul class="m-nav-menu">
+                <li> <a href="#">My Goals </a> </li>
+                <li> <a href="#">Inspiration </a> </li>
+                <li> <a href="#"><img class="a-avatar" src="assets/images/avatar.png" alt=""></a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+
+        <!-- masthead -->
+        <div class="o-masthead">
+          <div class="t-content-wrapper">
+            <div class="o-post">
+              <!-- Post header for moviles and tablets -->
+              <div class="m-post__title m-post__title--responsive">
+                <div class="m-avatar-header">
+                  <img class="a-avatar" src="assets/images/avatar.png" alt="Rounded avatar picture">
+                  <p class="m-avatar-header__text">Create by <em>Neill Pearman</em></p>
+                </div>
+                <h2 class="a-post-title">Swim with a dolphin</h2>
+              </div>
+
+              <div class="m-post__img">
+                <img class="a-image" src="assets/images/dolphins-small.jpg"
+                              srcset="assets/images/dolphins-small.jpg 300w,
+                                      assets/images/dolphins-large.jpg 600w"
+                              sizes="(min-width: 960px) 300px, 100vw"
+                              alt="dolphins swimming"
+                            />
+              </div>
+
+              <div class="m-post-info-wrapper">
+                <!-- Post header for Desktop screens -->
+                <div class="m-post__title m-post__title--desktop">
+                  <div class="m-avatar-header">
+                    <img class="a-avatar" src="assets/images/avatar.png" alt="Rounded avatar picture">
+                    <!-- <div class="a-avatar">
+                      <span>42x42</span>
+                    </div> -->
+                    <p class="m-avatar-header__text">Create by <em>Neill Pearman</em></p>
+                  </div>
+                  <h2 class="a-post-title">Swim with a dolphin</h2>
+                </div>
+
+                  <!-- Post Action Buttons Bars-->
+                <div class="m-post__all-actions-bar">
+                    <button class="a-btn a-btn--icon">
+                      <svg class="a-icon" height="18" viewBox="0 0 24 24" width="18" role="presentation">
+                        <use xlink:href="#icon-done"></use>
+                      </svg>
+                      Complete
+                    </button>
+
+                    <ul class="m-post__reduced-actions-bar">
+                      <li>
+                        <button class="a-btn a-btn--icon">
+                          <svg class="a-icon" height="18" viewBox="0 0 24 24" width="18" role="presentation">
+                            <use xlink:href="#icon-favorite"></use>
+                          </svg>
+                          like
+                        </button>
+                      </li>
+                      <li>
+                        <button class="a-btn a-btn--icon">
+                          <svg class="a-icon" height="18" viewBox="0 0 24 24" width="18" role="presentation">
+                            <use xlink:href="#icon-delete"></use>
+                          </svg>
+                          Remove
+                        </button>
+                      </li>
+                    </ul>
+                </div>
+                <!-- Paragraph and tags -->
+                <!-- <div class=""> -->
+                  <p class="m-post__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore ipsum magna aliqua.</p>
+                  <ul class="m-post__review">
+                    <li>592 likes</li>
+                    <li>1,184 doing this</li>
+                    <li><a class="a-link--primary" href="#">3 comments</a></li>
+                  </ul>
+                <!-- </div> -->
+                <ul class="m-post__tags">
+                  <li><button class="a-btn a-btn--small">Nature</button></li>
+                  <li><button class="a-btn a-btn--small">Swimming</button></li>
+                  <li><button class="a-btn a-btn--small">Another tag</button></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Body -->
+      <div class="t-content-wrapper">
+        <div class="m-discussion">
+          <h2 class="m-discussion__title">Discussion</h2>
+          <span class="m-discussion__float-subtitle">2 comments</span>
+        </div>
+
+          <div class="m-add-comment">
+            <img class="a-avatar--large a-avatar--align" src="assets/images/avatar.png" alt="rounded avatar picture">
+            <form class="m-form" action="controller" method="post">
+              <div class="m-form__row">
+                <label class="a-input__label" for="text-area">Add a comment</label>
+                <textarea class="a-text-area" id="text-area" name="name" rows="5" cols="51" maxlength="500" ></textarea>
+                <div class="m-form__footer">
+                  <button class="a-btn-primary a-btn--large">Post</button>
+                  <!-- <button class="btn-primary btn-wide" type="button" name="button">Create Goal</button> -->
+                </div>
+                </div>
+            </form>
+          </div>
+
+          <!-- Comments List -->
+          <ul class="h-bare-list">
+            <li class="m-comment">
+              <img class="a-avatar--large" src="assets/images/avatar.png" alt="rounded avatar picture">
+              <div class="">
+                <h4 class="m-avatar-header__text"><em>Tom Jenkinson</em> Today</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, s
+                    ed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
+                     eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                    sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              </div>
+            </li>
+            <li class="m-comment">
+              <img class="a-avatar--large" src="assets/images/avatar.png" alt="rounded avatar picture">
+              <div class="">
+                <h4 class="m-avatar-header__text"><em>Tom Jenkinson</em> 1 week ago</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+              </div>
+            </li>
+          </ul>
+      </div>
+
+      <!-- Footer -->
+      <div class="o-footer">
+        <div class="t-content-wrapper">
+          <div class="o-footer__list">
+            <ul class="m-nav-menu">
+              <li><a href="/"><span class="a-logo__text"><em>My</em>Bucket List</span></a></li>
+              <li> <a href="#">About </a> </li>
+              <li> <a href="#">Style Guide </a> </li>
+              <li> <a href="#">Terms of Use </a> </li>
+            </ul>
+            <p class="copyrights">&copy; EPFL 2021 </p>
+          </div>
+        </div>
+      </div>
+    </article>
+
+      <!-- My Goals -->
+      <article id="my-goals" class="t-home__section">
+        <h2>03. My Goals</h2>
+
+        <!-- Banner -->
+        <div class="t-banner">
+
+          <!-- Global header -->
+          <div class="o-global-header">
+            <div class="t-content-wrapper h-flex-wrapper">
+              <div class="o-global-header__logo-search-wrapper">
+                <div class="a-logo">
+                  <a href="/"><span class="a-logo__text"><em>My</em> Bucket List </span></a>
+                </div>
+
+                <form class="m-form" action="#" method="post">
+                  <div class="m-search-input__row">
+                    <input class="a-input__field m-search-input__field" type="text" name="search" placeholder="E.g. Swimming with dolphins" />
+                    <button class="a-btn-primary" type="submit">Search</button>
+                  </div>
+                </form>
+              </div>
+
+              <nav>
+                <ul class="m-nav-menu">
+                  <li> <a href="#">My Goals </a> </li>
+                  <li> <a href="#">Inspiration </a> </li>
+                  <li> <a href="#"><img class="a-avatar" src="assets/images/avatar.png" alt=""></a></li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+
+          <!-- masthead -->
+          <div class="o-masthead">
+            <div class="t-content-wrapper">
+              <div class="m-masterhead__create-goal">
+                <h1 class="a-title">My Goals</h1>
+                <button class="a-btn"> Create Goal </button>
+              </div>
+              <ul class="m-masthead__menu">
+                <li> <a class="a-link--primary" href="#">To-do </a> </li>
+                <li> <a class="a-link--primary" href="#">Completed </a> </li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Body -->
+        <div class="t-content-wrapper">
+
+          <ul class="m-cards">
+            <li class="m-card">
+              <a class="m-card__thumb" href="#">
+                <img class="a-image" src="assets/images/northern-lights-small.jpg"
+                              srcset="assets/images/northern-lights-small.jpg 300w,
+                                      assets/images/northern-lights-large.jpg 600w"
+                              sizes="(min-width: 960px) 300px, 100vw"
+                              alt="Northern lights above a house at night"
+                            />
+                <div class="m-card__intro">
+                  <h3 class="m-card__title">Watch the northern lights</h3>
+                  <span class="m-card__subtitle">1,350 doings this</span>
+                </div>
+              </a>
+              <div class="m-card__footer">
+                <svg class="a-icon a-icon--liked" height="18" viewBox="0 0 24 24" width="18" role="presentation">
+                  <use xlink:href="#icon-done"></use>
+                </svg>
+                <p class="m-card__footer__date">07 feb 2017</p>
+              </div>
+            </li>
+            <li class="m-card">
+              <a class="m-card__thumb" href="#">
+                <img class="a-image" src="assets/images/dolphins-small.jpg"
+                              srcset="assets/images/dolphins-small.jpg 300w,
+                                      assets/images/dolphins-large.jpg 600w"
+                              sizes="(min-width: 960px) 300px, 100vw"
+                              alt="dolphins swimming"
+                            />
+                <span class="m-card__thumb__owner">Owner</span>
+                <div class="m-card__intro">
+                  <h3 class="m-card__title">Swim with a dolphin</h3>
+                  <span class="m-card__subtitle">1,200 doings this</span>
+                </div>
+              </a>
+              <div class="m-card__footer">
+                <svg class="a-icon a-icon--liked" height="18" viewBox="0 0 24 24" width="18" role="presentation">
+                  <use xlink:href="#icon-done"></use>
+                </svg>
+                <p class="m-card__footer__date">Today</p>
+              </div>
+            </li>
+            <li class="m-card">
+              <a class="m-card__thumb" href="#">
+                <img class="a-image" src="assets/images/dancing-small.jpg"
+                              srcset="assets/images/dancing-small.jpg 300w,
+                                      assets/images/dancing-large.jpg 600w"
+                              sizes="(min-width: 960px) 300px, 100vw"
+                              alt="Man dancing with his arms out"
+                            />
+
+                <div class="m-card__intro">
+                  <h3 class="m-card__title">Dance like nobody's watching.</h3>
+                  <span class="m-card__subtitle">2,500 doing this</span>
+                </div>
+              </a>
+              <div class="m-card__footer">
+                <svg class="a-icon a-icon--liked" height="18" viewBox="0 0 24 24" width="18" role="presentation">
+                  <use xlink:href="#icon-done"></use>
+                </svg>
+                <p class="m-card__footer__date">12 Oct 2020</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Footer -->
+        <div class="o-footer">
+          <div class="t-content-wrapper">
+            <div class="o-footer__list">
+              <ul class="m-nav-menu">
+                <li><a href="/"><span class="a-logo__text"><em>My</em>Bucket List</span></a></li>
+                <li> <a href="#">About </a> </li>
+                <li> <a href="#">Style Guide </a> </li>
+                <li> <a href="#">Terms of Use </a> </li>
+              </ul>
+              <p class="copyrights">&copy; EPFL 2021 </p>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- User Followers -->
+      <article id="user-followers" class="t-home__section">
+        <h2>04. User Followers</h2>
+
+        <!-- Banner -->
+        <div class="t-banner">
+
+          <!-- Global header -->
+          <div class="o-global-header">
+            <div class="t-content-wrapper h-flex-wrapper">
+              <div class="o-global-header__logo-search-wrapper">
+                <div class="a-logo">
+                  <a href="/"><span class="a-logo__text"><em>My</em> Bucket List </span></a>
+                </div>
+
+                <form class="m-form" action="#" method="post">
+                  <div class="m-search-input__row">
+                    <input class="a-input__field m-search-input__field" type="text" name="search" placeholder="E.g. Swimming with dolphins" />
+                    <button class="a-btn-primary" type="submit">Search</button>
+                  </div>
+                </form>
+              </div>
+
+              <nav>
+                <ul class="m-nav-menu">
+                  <li> <a href="#">My Goals </a> </li>
+                  <li> <a href="#">Inspiration </a> </li>
+                  <li> <a href="#"><img class="a-avatar" src="assets/images/avatar.png" alt=""></a></li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+
+          <!-- masthead -->
+          <div class="o-masthead">
+            <div class="t-content-wrapper">
+              <div class="m-avatar-header">
+                <div class="a-avatar">
+                  <span>42x42</span>
+                </div>
+                <h1 class="a-title">Jason Reynolds</h1>
+              </div>
+              <ul class="m-masthead__menu">
+                <li><a class="a-link--primary" href="#">Profile</a></li>
+                <li><a class="a-link--primary" href="#">Following</a></li>
+                <li><a class="a-link--primary" href="#">Followers</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Body -->
+        <div class="t-content-wrapper">
+          <ul class="o-followers-list h-bare-list">
+            <li class="m-follower">
+              <img class="a-avatar" src="assets/images/avatar.png" alt="rounded avatar picture">
+              <div class="m-follower__header">
+                <h4 class="m-avatar-header__text"><a class="a-link--primary" href="#">Bradley Jeckins</a></h4>
+                <span>3 Goals</span>
+              </div>
+              <button class="a-btn a-btn--outlined">following</button>
+            </li>
+
+            <li class="m-follower">
+              <img class="a-avatar" src="assets/images/avatar.png" alt="rounded avatar picture">
+              <div class="m-follower__header">
+                <h4 class="m-avatar-header__text"><a class="a-link--primary" href="#">Bradley Jeckins</a></h4>
+                <span>3 Goals</span>
+              </div>
+              <button class="a-btn a-btn--outlined">unfollow</button>
+            </li>
+
+            <li class="m-follower">
+              <img class="a-avatar" src="assets/images/avatar.png" alt="rounded avatar picture">
+              <div class="m-follower__header">
+                <h4 class="m-avatar-header__text"><a class="a-link--primary" href="#">Bradley Jeckins</a></h4>
+                <span>3 Goals</span>
+              </div>
+              <button class="a-btn a-btn--outlined">follow</button>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Footer -->
+        <div class="o-footer">
+          <div class="t-content-wrapper">
+            <div class="o-footer__list">
+              <ul class="m-nav-menu">
+                <li><a href="/"><span class="a-logo__text"><em>My</em>Bucket List</span></a></li>
+                <li> <a href="#">About </a> </li>
+                <li> <a href="#">Style Guide </a> </li>
+                <li> <a href="#">Terms of Use </a> </li>
+              </ul>
+              <p class="copyrights">&copy; EPFL 2021 </p>
+            </div>
+          </div>
+        </div>
+      </article>
+
+    </div>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="t-home__footer">
+    <div class="t-home__wrapper h-flex-wrapper">
+      <div class="a-logo h-no-underline-text">
+        <a href="/"><span class="a-logo__text"><em>My</em> Bucket List - Style Guide</span></a>
+      </div>
+      <p>&copy; EPFL 2020</p>
+    </div>
+  </footer>
+
+</body>
+
+</html>

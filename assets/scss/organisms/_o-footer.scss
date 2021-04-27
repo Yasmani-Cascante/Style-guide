@@ -1,0 +1,38 @@
+/*=============================
+ * Organisms - Footer
+ *=============================*/
+
+.o-footer {
+  background: $black;
+  padding: 4.2rem 0;
+  margin: $pulse-4x 0 0 0;
+
+  .o-footer__list {
+    display: flex;
+    align-items: baseline;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    white-space: nowrap;
+  }
+
+  .m-nav-menu {
+    float: none;
+    color: $gray-3;
+    text-transform: none;
+    margin: 1rem 0;
+    li {
+      margin: 0 $pulse-2x 0 0;
+    }
+  }
+
+  .a-logo__text {
+    color: $white;
+    // margin-right: 3.2rem;
+  }
+
+  .copyrights {
+    // margin-left: auto;
+    margin: 0;
+  }
+}
+// .global-footer .a-logo

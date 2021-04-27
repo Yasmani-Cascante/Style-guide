@@ -1,0 +1,25 @@
+/*=============================
+ * Organisms - Header
+ *=============================*/
+
+ .o-global-header {
+   border-bottom: 1px solid $gray-4;
+   color: $black;
+   padding: 2rem 0;
+
+   &__logo-search-wrapper {
+     display: flex;
+    flex-wrap: nowrap;
+    flex: 1 0 auto;
+    .a-logo {
+      float: left;
+      align-self: center;
+    }
+     form {
+       float: left;
+       margin: 0 3.2rem;
+       flex: 1 0 auto;
+     }
+   }
+
+ }

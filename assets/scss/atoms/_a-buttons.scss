@@ -1,0 +1,101 @@
+/*==============================
+ * Buttons
+ *============================== */
+.a-btn,
+%a-btn {
+// @extend %html
+// font-size: 1.3rem;
+  font-family: inherit;
+  font-size: 1.3rem;
+  background: $white;
+  color: $black;
+
+  padding: 1em 1.6em;
+  margin: 0;
+
+  border-radius: 3px;
+  border: 1px solid $gray-4;
+
+  text-transform: uppercase;
+  text-decoration: none;
+
+  /* width: 25%; */
+  white-space: nowrap;
+  cursor: pointer;
+
+    &:hover,
+    &:active,
+    &:focus {
+      color: $white;
+      background-color: $primary-color;
+      border-color: lighten($primary-color, 10);
+    }
+  /*-------------------------------
+   * Buttons modifications
+   *------------------------------- */
+  &--outlined {
+    // width: 9em;
+    width: 12em;
+    &:hover,
+    &:focus,
+    &:active {
+      color: $white;
+      background-color: $secondary-color;
+      border-color: darken($secondary-color, 10);
+    }
+  }
+  &--small {
+    padding: 0.5em 1em;
+    // margin-right: 0;
+  }
+  &--large {
+    padding: 1.3em 2.3em;
+  }
+
+  &--wide {
+  width: 100%
+  }
+
+  &--icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /* tamana aproximativo a simple vista pq los elementos
+  van en un contenedor responsive (flex-container) */
+  // width: 25%;
+    svg{
+     margin-right: 0.5em;
+     // fill: $gray-2;
+    }
+  }
+
+}
+
+
+/*-------------------------------
+ * Media Querys
+ *------------------------------- */
+
+ /* Tablets */
+ @include tablet {
+    .btn--outlined {
+      width: 12em;
+    }
+  }
+
+
+
+
+.buttons-example .btn {
+  float: left;
+}
+/* .buttons-example {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+} */
+
+// .atoms-buttons-section .buttons-example .btn:last-child {
+//   margin: 0 0 0 2.4rem;
+// }

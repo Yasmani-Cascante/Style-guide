@@ -1,0 +1,14 @@
+
+.a-btn-primary {
+  @extend %a-btn;
+  background: $primary-color;
+  color: $white;
+  border: 1px solid $primary-color;
+
+  &:hover,
+  &:active,
+  &:focus {
+    background-color: darken($primary-color, 20);
+    border-color: darken($primary-color, 15);
+  }
+}

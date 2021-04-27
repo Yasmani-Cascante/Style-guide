@@ -1,0 +1,7 @@
+.a-btn-secondary {
+  @extend %a-btn;
+  background: $gray-4;
+  color: $gray-1;
+  border: 1px solid $gray-4;
+
+}

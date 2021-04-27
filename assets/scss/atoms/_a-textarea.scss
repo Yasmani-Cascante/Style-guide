@@ -1,0 +1,10 @@
+/*-----------------------------
+ * Input Text Area
+ *----------------------------*/
+
+.a-text-area {
+@extend %a-input__field;
+resize: none;
+width: 100%;
+box-sizing: border-box;
+}

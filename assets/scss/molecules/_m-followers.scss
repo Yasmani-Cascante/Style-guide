@@ -1,0 +1,14 @@
+/*============================
+ * Molecules - Follower
+ *=============================*/
+.m-follower{
+ border-bottom: 1px solid $gray-4;
+ padding: $pulse 0;
+ color: $gray-3;
+
+ display: flex;
+ flex-direction: row;
+  button {
+    margin-left: auto;
+  }
+}

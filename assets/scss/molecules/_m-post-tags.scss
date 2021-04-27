@@ -1,0 +1,42 @@
+/*==============================
+ *  Molecules - Post tags
+ *============================== */
+
+.m-post__tags {
+@extend %h-bare-list;
+  display: flex;
+  flex-wrap: nowrap;
+  margin: 2rem 0 0 0;
+  &::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  & li {
+    float: left;
+    margin-right: 0.8rem;
+  }
+}
+
+/*-------------------------------
+ * Media Querys
+ *------------------------------- */
+
+ /* Tablets */
+ @include tablet {
+  // Tags buttons color changement
+  .m-post__tags {
+    button {
+      background: $gray-4;
+      color: $gray-1;
+      border: 1px solid $gray-4;
+    }
+  }
+}
+
+/* Desktop */
+@include desktop  {
+ .m-post__tags {
+    margin: $pulse-3x 0 0 0;
+ }
+}

@@ -1,0 +1,19 @@
+/*============================
+ * Links
+ *=============================*/
+
+.a-link,
+%a-link {
+  @extend %h-no-underline-text;
+  color: $black;
+  text-decoration: none;
+  font-size: 1.5rem;
+  border: 0;
+  cursor: pointer;
+  text-transform: capitalize;
+}
+
+.a-link--primary {
+@extend %a-link;
+  color: $primary-color;
+}

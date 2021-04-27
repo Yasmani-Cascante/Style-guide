@@ -1,0 +1,29 @@
+/*==============================
+ *  Molecules - Nav Menus
+ *============================== */
+
+.m-nav-menu {
+  @extend %h-bare-list;
+  @extend %h-no-underline-text;
+  color: $black;
+  // font-size: 1.2rem;
+  text-transform: capitalize;
+
+  float: right;
+  display: flex;
+  align-items: center;
+  & li {
+    float: left;
+    // margin-left: 3.2em;
+    margin-left: 1.6em;
+     &:first-child {
+     margin-left: 0
+     }
+  }
+  & a {
+    color: inherit;
+  }
+  .a-logo__text {
+    font-size: inherit;
+  }
+}

@@ -1,0 +1,64 @@
+/*==============================
+ *  Post Buttons bar
+ *============================== */
+
+.m-post__all-actions-bar {
+   button {
+    width: 100%;
+    }
+}
+
+.m-post__reduced-actions-bar {
+  @extend %h-bare-list;
+  width: 100%;
+  &::after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+
+  button {
+  width: 100%;
+  }
+
+  li {
+    float: left;
+    // width: calc(50% - 1.6rem);
+    width: calc(50% - 0.8rem);
+  }
+
+  li:last-child {
+    margin-left: 1.6rem;
+    }
+}
+
+
+/*-------------------------------
+ * Media Querys
+ *------------------------------- */
+/* Tablets */
+@include tablet {
+ .m-post__all-actions-bar {
+   &::after{
+     content: "";
+     clear: both;
+     display: table;
+     }
+
+   button {
+     float: left;
+     margin-right: 1.6rem;
+      width: calc(33.33% - 1.6rem);
+   }
+
+   .m-post__reduced-actions-bar {
+     float: left;
+     margin: 0;
+     width: calc(100% - 33.33%);
+     button {
+       margin-right: 0;
+       width: 100%;
+     }
+   }
+ }
+}

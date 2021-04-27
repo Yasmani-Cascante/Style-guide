@@ -1,0 +1,60 @@
+/*-----------------------------
+ * HELPERS
+ *------------------------------*/
+// // t-home-wrapper
+// .h-content-wrapper,
+// %h-content-wrapper {
+//  max-width: 96em;
+//  margin: 0 auto;
+//  padding: 0 1em;
+//    &::after {
+//    // content: '';
+//    display: table;
+//    clear: both;
+//    }
+//   &--larger {
+//     max-width: 106em;
+//     margin: 0 auto;
+//   }
+// }
+
+// Clases generales como el nav y gay-box
+// hacen uso extendido de estas dos clases
+.h-bare-list,
+%h-bare-list {
+ list-style-type: none;
+ padding: 0;
+}
+
+.h-no-underline-text a,
+%h-no-underline-text a {
+  text-decoration: none;
+}
+
+.h-flex-wrapper {
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.h-sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0,0,0,0);
+}
+
+.h-clear-floats {
+  // content: "";
+  clear: both; /* left | right */
+  display: table;
+}
+
+.h-hide {
+  display: none;
+}

@@ -1,0 +1,228 @@
+/*============================
+ * Atoms Page scss Styles
+ *=============================*/
+
+ /*-----------------------------
+  * Palette section
+  *----------------------------*/
+.p-atoms-palette-wrapper {
+  margin-right: -3.2rem;
+}
+
+.p-atoms-palette-colors-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  font-size: 1rem;
+  & li:nth-of-type(1) .color-swatch {
+  background: $primary-color;
+  }
+  & li:nth-of-type(2) .color-swatch {
+  background: $black;
+  }
+  & li:nth-of-type(3) .color-swatch {
+  background: $gray-1;
+  }
+  & li:nth-of-type(4) .color-swatch {
+  background: $gray-2;
+  }
+  & li:nth-of-type(5) .color-swatch {
+  background: $gray-3;
+  }
+  & li:nth-of-type(6) .color-swatch {
+  background: $gray-4;
+  }
+  & li:nth-of-type(7) .color-swatch {
+  background: $gray-5;
+  }
+  & li:nth-of-type(8) .color-swatch {
+  background: $secondary-color;
+  }
+
+  .p-atoms-palette-colors-list__item {
+    margin: 0 3.2rem 1.6rem 0;
+    width: calc(50% - 3.2rem);
+    .color-swatch {
+      height: 75px;
+      width: 100%;
+      margin: 0 0 0.5em 0;
+      border-radius: 3px;
+    }
+    .color-code {
+      // @extend %h-no-underline-text;
+      text-transform: uppercase;
+    }
+  }
+
+  /* ============================
+   Media Queries
+  =============================== */
+
+  /* Tablets */
+  @include tablet {
+    .p-atoms-palette-colors-list__item {
+      width: calc(25% - 3.2rem);
+    }
+  }
+
+  /* Desktops */
+  @include desktop {
+    .p-atoms-palette-colors-list__item {
+      width: calc(16.6% - 3.2rem);
+    }
+  }
+
+}
+
+/*-----------------------------
+
+ * TYPOGRAPHY section
+ *----------------------------*/
+
+ .p-atoms-typography-wrapper {
+  font-size: 1rem;
+ }
+
+// .p-atoms-typography {
+// ...
+// }
+
+  // Typography Glyph
+ .p-atoms-typography__glyph {
+   float: left;
+   margin: 0 3.2rem 0 0;
+   & span {
+     // font-size: 9.2rem;
+    font-size: 13rem;
+    line-height: initial;
+    color: #192127;
+    // position: relative;
+    // top: -3.2rem;
+   }
+ }
+
+  // Typography weights
+ .p-atoms-typography__weights {
+    float: left;
+    .typography-weights__list {
+     font-size: 2.6em;
+     color: #192127;
+       & li:nth-of-type(2) {
+        font-style: italic;
+       }
+       & li:nth-of-type(3) {
+        font-weight: bold;
+       }
+       & li:nth-of-type(4) {
+        font-style: italic;
+        font-weight: bold;
+       }
+    }
+ }
+
+// Typography sizes
+.p-atoms-typography-sizes {
+  .p-atoms-typography-sizes__list {
+    & li {
+    font-size: 1rem;
+    width: 100%;
+    box-sizing: border-box;
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0.5rem;
+    border-bottom: 1px solid $gray-4;
+      .t-sub-title {
+        font-size: 1.2em;
+      }
+    }
+
+
+  }
+  .size4of8 {
+    width: 25%;
+  }
+
+  .size2of8 {
+    width: 15%;
+  }
+
+  /* ============================
+   Media Queries
+  =============================== */
+
+  /* Tablets */
+  @include tablet {
+
+    .p-atoms-typography-sizes__list li .t-sub-title {
+        font-size: 1.5em;
+      }
+      .size2of8 {
+        width: 17%;
+      }
+  }
+
+
+  /* Desktops */
+  @include desktop {
+    .size4of8 {
+      width: 35%;
+      white-space: nowrap;
+    }
+
+    .size2of8 {
+      width: 15%;
+      white-space: nowrap;
+    }
+  }
+}
+
+// Buttons
+.p-atoms-default-buttons-wrapper {
+  display: flex;
+  .a-btn {
+    margin-right: 3.2rem;
+  }
+}
+
+/*-----------------------------
+ * Forms Elements section
+ *----------------------------*/
+.p-atoms-input-wrapper {
+  max-width: 450px;
+}
+
+/*-----------------------------
+ * Icons Elements section
+ *----------------------------*/
+
+ .p-atoms-icons-list {
+ display: flex;
+ align-items: stretch;
+ flex-wrap: wrap;
+ margin-right: -2rem;
+   .icons-list__item{
+     padding: 2.4rem 3.5rem;
+     margin: 0 ($pulse * 1) ($pulse * 1) 0;
+
+     // box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.14);
+     box-shadow: 0 0 6px rgba(0, 0, 0, 0.14);
+     border: 1px solid rgba(0, 0, 0, 0.10);
+
+     width: 20px;
+     height: 20px;
+   }
+
+ }
+
+ /*-----------------------------
+  * Images section
+  *----------------------------*/
+
+// For visual purpose
+.p-atoms-image-wrapper {
+  width: 50%;
+}

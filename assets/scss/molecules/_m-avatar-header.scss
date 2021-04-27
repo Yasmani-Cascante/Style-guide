@@ -1,0 +1,30 @@
+/*==============================
+ * Avatar + header
+ *============================== */
+.m-avatar-header {
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  text-transform: none;
+  // font-size: 1rem;
+  margin-bottom: $pulse;
+  &::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .a-avatar {
+    float: left
+  }
+}
+.m-avatar-header__text {
+  font-size: 1.5rem;
+  text-transform: none;
+  margin: 0;
+  color: $gray-2;
+  em {
+    font-style: normal;
+    color: $black;
+
+  }
+}

@@ -1,0 +1,33 @@
+
+
+.a-input__field--label {
+  @extend %a-input__field;
+  text-transform: uppercase;
+  color: $black;
+  text-align: center;
+  // width: 100%;
+  display: block;
+  cursor: pointer;
+
+  border: 1px solid $gray-4;
+  box-shadow: none;
+}
+
+/*-------------------------------
+ * Media Querys
+ *------------------------------- */
+  // width: calc(100% + 5.72rem);
+
+ /* Tablets */
+ // @include tablet {
+ //    .a-input__field--label {
+ //      width: 100%;
+ //    }
+ //  }
+
+ /* Desktops */
+ @include desktop {
+   .a-input__field--label {
+     width: 30.2rem;
+   }
+  }

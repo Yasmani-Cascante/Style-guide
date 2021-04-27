@@ -1,0 +1,14 @@
+
+.a-btn-warning {
+  @extend %a-btn;
+  background: $secondary-color;
+  color: $white;
+  border: 1px solid $secondary-color;
+
+  &:hover,
+  &:active,
+  &:focus {
+    background-color: darken($secondary-color, 20);
+    border-color: darken($secondary-color, 15);
+  }
+}

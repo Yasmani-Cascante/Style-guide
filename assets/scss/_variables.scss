@@ -1,0 +1,23 @@
+/* ------------------------------
+ * Color
+ * --------------------------- */
+
+$white: #fff;
+$black: #192127;
+$primary-color: #2c9cf2; // blue
+$secondary-color: #e25d43; // Red
+$gray-1: #72797e; // Darkest grey
+$gray-2: #afbac4;
+$gray-3: #bbc1c6;
+$gray-4: #e3e5e9;
+$gray-5: #f7f9fc; // Lightest gray
+
+// # Sizes
+$base-line-height: 1.6;
+$pulse: $base-line-height * 1rem;
+$pulse-2x: $base-line-height * 2rem;
+$pulse-3x: $base-line-height * 3rem;
+$pulse-4x: $base-line-height * 4rem;
+$pulse-5x: $base-line-height * 5rem;
+$pulse-6x: $base-line-height * 6rem;
+$pulse-7x: $base-line-height * 7rem;

@@ -1,0 +1,22 @@
+/*-----------------------------
+ * ICONS
+ *----------------------------*/
+.a-icon,
+%a-icon {
+  fill: $gray-2;
+  min-height: 20px;
+  min-width: 20px;
+  // height: 2rem;
+  // width: 2rem;
+  margin-right: 5px;
+
+  .btn:hover &,
+  .btn:focus &,
+  .btn:active & {
+    fill: currentColor;
+  }
+
+  &--liked {
+    fill: $primary-color;
+  }
+}

@@ -1,0 +1,18 @@
+/*==============================
+ *   Molecules - Discussion Title
+ *============================== */
+
+.m-discussion {
+  &::after {
+  content: "";
+  display: table;
+  clear: both;
+  }
+ &__title {
+  float: left;
+  margin-right: 1rem;
+  }
+  &__float-subtitle {
+    color: $gray-3;
+  }
+}

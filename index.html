@@ -1,0 +1,799 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Style Guide</title>
+
+  <!-- [if !IE]><!-->
+  <link href="https://fonts.googleapis.com/css?family=Rubik:400,400i,700,700i" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styleguide.css">
+  <!--[endif]-->
+
+  <!-- [if IE]>
+      <link rel="stylesheet" href="assets/css/universal-ie9-css.css">
+    <![endif]-->
+
+</head>
+
+<body>
+  <!-- SVG Files -->
+  <svg style="display: none;">
+    <defs>
+      <symbol id="icon-done" class="off">
+        <path d="M0 0h24v24H0z" fill="none" />
+        <path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z" />
+      </symbol>
+      <symbol id="icon-add" class="off">
+        <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" />
+        <path d="M0 0h24v24H0z" fill="none" />
+      </symbol>
+      <symbol id="icon-delete" class="off">
+        <path d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z" />
+        <path d="M0 0h24v24H0z" fill="none" />
+      </symbol>
+      <symbol id="icon-search" class="off">
+        <path
+          d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z" />
+        <path d="M0 0h24v24H0z" fill="none" />
+      </symbol>
+      <symbol id="icon-clear" class="off">
+        <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z" />
+        <path d="M0 0h24v24H0z" fill="none" />
+      </symbol>
+      <symbol id="icon-favorite" class="off">
+        <path d="M0 0h24v24H0z" fill="none" />
+        <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
+      </symbol>
+      <symbol id="icon-create" class="off">
+        <path d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.39-.39-1.02-.39-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z" />
+        <path d="M0 0h24v24H0z" fill="none" />
+      </symbol>
+      <symbol id="icon-menu" class="off">
+        <path d="M0 0h24v24H0z" fill="none" />
+        <path d="M3 20h20v-2H3v2zm0-5h20v-2H3v2zm0-7v2h20V6H3z" />
+      </symbol>
+      <symbol id="icon-date-range" class="off">
+        <path d="M9 11H7v2h2v-2zm4 0h-2v2h2v-2zm4 0h-2v2h2v-2zm2-7h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V9h14v11z" />
+        <path d="M0 0h24v24H0z" fill="none" />
+      </symbol>
+    </defs>
+  </svg>
+
+  <!-- Header -->
+  <header class="t-home__banner">
+    <div class="t-home__wrapper h-flex-wrapper">
+      <div class="a-logo">
+        <a href="/"><span class="a-logo__text"><em>My</em> Bucket List - Style Guide</span></a>
+      </div>
+      <nav>
+        <ul class="t-home__nav">
+          <li><a href="index.html">Atoms</a></li>
+          <li><a href="molecules.html">Molecules</a></li>
+          <li><a href="organisms.html">Organisms</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- main content -->
+  <main class="t-home__body">
+    <div class="t-home__wrapper">
+
+      <!-- Atoms Main menu -->
+      <!-- <section class="t-section"> -->
+      <h1>Atoms</h1>
+      <ol class="t-home__menu">
+        <li><a class="t-home__menu__links" href="#colors-section">Palette</a></li>
+        <li><a class="t-home__menu__links" href="#typography-section">Typography</a></li>
+        <li><a class="t-home__menu__links" href="#buttons-section">Buttons</a></li>
+        <li><a class="t-home__menu__links" href="#links-section">Links</a></li>
+        <li><a class="t-home__menu__links" href="#form-elements-section">Form Elements</a></li>
+        <li><a class="t-home__menu__links" href="#icons-section">Icons</a></li>
+        <li><a class="t-home__menu__links" href="#images-section">Images</a>
+          <ul class="t-home__menu__sub-list">
+            <li><a class="t-home__menu__links" href="#avatar-section">avatars</a></li>
+            <li><a class="t-home__menu__links" href="#thumbnails-section">thumbnails</a></li>
+          </ul>
+        </li>
+        <li><a class="t-home__menu__links" href="#text-section">Text</a>
+          <ul class="t-home__menu__sub-list">
+            <li><a class="t-home__menu__links" href="#heading-section">Headings</a></li>
+            <li><a class="t-home__menu__links" href="#error-text">Error text</a></li>
+            <li><a class="t-home__menu__links" href="#hint-text">Hint text</a></li>
+          </ul>
+        </li>
+      </ol>
+      <!-- </section> -->
+
+      <!-- Palette Section -->
+      <article id="colors-section" class="t-home__section">
+        <h2>01. Palette</h2>
+        <div class="p-atoms-palette-wrapper">
+          <ul class="p-atoms-palette-colors-list h-bare-list">
+            <li class="p-atoms-palette-colors-list__item">
+              <div class="color-swatch"></div>
+              <span class="color-code">#2c9cf2</span>
+            </li>
+            <li class="p-atoms-palette-colors-list__item">
+              <div class="color-swatch"></div>
+              <span class="color-code">#192127</span>
+            </li>
+            <li class="p-atoms-palette-colors-list__item">
+              <div class="color-swatch"></div>
+              <span class="color-code">#72797e</span>
+            </li>
+            <li class="p-atoms-palette-colors-list__item">
+              <div class="color-swatch"></div>
+              <span class="color-code">#afbac4</span>
+            </li>
+            <li class="p-atoms-palette-colors-list__item">
+              <div class="color-swatch"></div>
+              <span class="color-code">#bbc1c6</span>
+            </li>
+            <li class="p-atoms-palette-colors-list__item">
+              <div class="color-swatch"></div>
+              <span class="color-code">#e3e5e9</span>
+            </li>
+            <li class="p-atoms-palette-colors-list__item">
+              <div class="color-swatch"></div>
+              <span class="color-code">#f7f9fc</span>
+            </li>
+            <li class="p-atoms-palette-colors-list__item">
+              <div class="color-swatch"></div>
+              <span class="color-code">#e25d43</span>
+            </li>
+          </ul>
+        </div>
+      </article>
+
+      <!-- Typhograghy Section -->
+      <article id="typography-section" class="t-home__section p-atoms-typhograghy-section">
+        <h2>02. Typography</h2>
+
+        <div class="p-atoms-typography-wrapper">
+          <div class="p-atoms-typography">
+            <div class="p-atoms-typography__glyph">
+              <h3 class="t-home__sub-title">glyph</h3>
+              <span>Aa</span>
+            </div>
+
+            <div class="p-atoms-typography__weights">
+              <h3 class="t-home__sub-title">Weights</h3>
+              <ul class="typography-weights__list h-bare-list">
+                <li>Regular</li>
+                <li>Regular Italic</li>
+                <li>Bold</li>
+                <li>Bold italic</li>
+              </ul>
+            </div>
+
+            <div class="t-gray-box h-clear-floats">
+              <ul class="t-gray-box-list ">
+                <li>font-family: <span>'Rubik', sans-serif;</span></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="p-atoms-typography-sizes">
+            <ul class="p-atoms-typography-sizes__list ">
+              <li>
+                <div class="size4of8 t-home__sub-title">style</div>
+                <div class="size2of8 t-home__sub-title">desktop</div>
+                <div class="size2of8 t-home__sub-title">tablet</div>
+                <div class="size2of8 t-home__sub-title">mobile</div>
+                <div class="size2of8 t-home__sub-title">line-height</div>
+              </li>
+              <li>
+                <div class="size4of8"><span class="alpha">H1</span></div>
+                <div class="size2of8">
+                  <p>48px</p>
+                </div>
+                <div class="size2of8">
+                  <p>40px</p>
+                </div>
+                <div class="size2of8">
+                  <p>36px</p>
+                </div>
+                <div class="size2of8">
+                  <p>1.2</p>
+                </div>
+              </li>
+              <li>
+                <div class="size4of8"><span class="beta">H2</span></div>
+                <div class="size2of8">
+                  <p>36px</p>
+                </div>
+                <div class="size2of8">
+                  <p>32px</p>
+                </div>
+                <div class="size2of8">
+                  <p>28px</p>
+                </div>
+                <div class="size2of8">
+                  <p>1.2</p>
+                </div>
+              </li>
+              <li>
+                <div class="size4of8"><span class="gamma">H3</span></div>
+                <div class="size2of8">
+                  <p>28px</p>
+                </div>
+                <div class="size2of8">
+                  <p>28px</p>
+                </div>
+                <div class="size2of8">
+                  <p>24px</p>
+                </div>
+                <div class="size2of8">
+                  <p>1.2</p>
+                </div>
+              </li>
+              <li>
+                <div class="size4of8">
+                  <p class="delta">ACTION / BUTTON</p>
+                </div>
+                <div class="size2of8">
+                  <p>13px</p>
+                </div>
+                <div class="size2of8">
+                  <p>13px</p>
+                </div>
+                <div class="size2of8">
+                  <p>13px</p>
+                </div>
+                <div class="size2of8">
+                  <p>1</p>
+                </div>
+              </li>
+              <li>
+                <div class="size4of8">
+                  <p>Paragraph text</p>
+                </div>
+                <div class="size2of8">
+                  <p>15px</p>
+                </div>
+                <div class="size2of8">
+                  <p>15px</p>
+                </div>
+                <div class="size2of8">
+                  <p>15px</p>
+                </div>
+                <div class="size2of8">
+                  <p>1.6</p>
+                </div>
+              </li>
+              <li>
+                <div class="size4of8">
+                  <p>Small</p>
+                </div>
+                <div class="size2of8">
+                  <p>14px</p>
+                </div>
+                <div class="size2of8">
+                  <p>14px</p>
+                </div>
+                <div class="size2of8">
+                  <p>14px</p>
+                </div>
+                <div class="size2of8">
+                  <p>1.4</p>
+                </div>
+              </li>
+            </ul>
+
+            <div class="typography-code t-gray-box">
+              <ul class="t-gray-box-list ">
+                <li><span>&lt;h1&gt;</span>Heading level 1<span>&lt;/h1&gt;</span></li>
+                <li><span>&lt;h2/&gt;</span>Heading level 2<span>&lt;/h2&gt;</span></li>
+                <li><span>&lt;h3&gt;</span>Heading level 3<span>&lt;/h3&gt;</span></li>
+                <li><span>&lt;button&gt;</span>Like<span>&lt;/button&gt;</span></li>
+                <li><span>&lt;p&gt;</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit.<span>&lt;/p&gt;</span></li>
+                <li><span>&lt;p class=<span class="vine-color">"small"</span>&gt;</span>Duis aute irure dolor in reprehenderit in voluptate velit.<span>&lt;/p&gt;</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- Buttons Section -->
+      <article id="buttons-section" class="t-home__section">
+        <h2>03. Buttons</h2>
+
+        <!-- Default button -->
+        <section class="t-home__section__box">
+          <h3 class="t-home__sub-title">Default button</h3>
+          <div class="p-atoms-default-buttons-wrapper">
+            <button class="a-btn">button</button>
+            <a class="a-btn">link button</a>
+          </div>
+          <div class="t-gray-box">
+            <ul class="t-gray-box-list">
+              <li>
+                <span>&lt;button class=<span class="vine-color">"a-btn"</span>
+                  type=<span class="vine-color">"button"</span>
+                  &gt;</span>Button<span>&lt;/button&gt;</span>
+              </li>
+              <li>
+                <span>&lt;a href=<span class="vine-color">"#"</span>
+                  class=<span class="vine-color">"a-btn"</span>
+                  &gt;</span>link button<span>&lt;/a&gt;</span>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- Primary button -->
+        <section class="t-home__section__box">
+          <h3 class="t-home__sub-title">Primary button</h3>
+          <button class="a-btn-primary">Primary button</button>
+          <div class="t-gray-box">
+            <ul class="t-gray-box-list ">
+              <li><span>&lt;button class=<span class="vine-color">"a-btn-primary"</span>
+                  type=<span class="vine-color">"button"</span>
+                  &gt;</span>Primary button<span>&lt;/button&gt;</span>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- Secondary button -->
+        <section class="t-home__section__box">
+          <h3 class="t-home__sub-title">Secondary button</h3>
+          <div class="">
+            <button class="a-btn-secondary">Secondary button</button>
+          </div>
+          <div class="t-gray-box">
+            <ul class="t-gray-box-list ">
+              <li><span>&lt;button class=<span class="vine-color">"a-btn-secondary"</span>
+                  type=<span class="vine-color">"button"</span>
+                  &gt;</span>Secondary button<span>&lt;/button&gt;</span>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- Warning button -->
+        <section class="t-home__section__box">
+          <h3 class="t-home__sub-title">Warning button</h3>
+          <div class="">
+            <button class="a-btn-warning">Warning button</button>
+          </div>
+          <div class="t-gray-box">
+            <ul class="t-gray-box-list ">
+              <li><span>&lt;button class=<span class="vine-color">"a-btn-warning"</span>
+                  type=<span class="vine-color">"button"</span>
+                  &gt;</span>Warning button<span>&lt;/button&gt;</span>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </article>
+
+
+      <!-- Links Section -->
+      <article id="links-section" class="t-home__section">
+        <h2>04. Links</h2>
+
+        <!-- Default links -->
+        <section class="t-home__section__box">
+          <h3 class="t-home__sub-title">Default links</h3>
+
+          <a class="a-link--primary" href="#">I'am a link</a>
+
+          <div class="t-gray-box">
+            <ul class="t-gray-box-list">
+              <li>
+                <span>&lt;a class=<span class="vine-color">"a-link--primary"</span>
+                  href=<span class="vine-color">"#"</span>
+                  &gt;</span>I'am a link<span>&lt;/a&gt;</span>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- Text Links -->
+        <section class="t-home__section__box">
+          <h3 class="t-home__sub-title">text link</h3>
+          <a class="a-link" href="#">I'am a link too</a>
+          <div class="t-gray-box">
+            <ul class="t-gray-box-list ">
+              <li>
+                <span>&lt;a class=<span class="vine-color">"a-link"</span>
+                  href=<span class="vine-color">"#"</span>
+                  &gt;</span>I'am a link too<span>&lt;/a&gt;</span>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+      </article>
+
+      <!-- Form Elements Section -->
+      <article id="form-elements-section" class="t-home__section">
+        <h2>04. Form Elements</h2>
+
+        <!-- Text input Section-->
+        <section class="t-home__section__box">
+          <h3 class="t-home__sub-title">Text input</h3>
+          <form class="m-form" action="index.html" method="post">
+
+            <div class="m-form__row">
+              <!-- <label for="text-input" class="input__label">Input label</label> -->
+              <input class="a-input__field" id="text-input" type="text" name="text-input" placeholder="Text Input">
+            </div>
+          </form>
+          <div class="t-gray-box">
+            <ul class="t-gray-box-list">
+              <li><span>&lt;form class=<span class="vine-color">"m-form"</span>&gt;</li>
+              <li class="t-gray-box__item--margin"><span>&lt;input class=<span class="vine-color">"a-input__field"</span>
+                  type=<span class="vine-color">"text"</span>
+                  placeholder= <span class="vine-color">"Text Input"</span>&gt;</span></li>
+              <li><span>&lt;/form&gt;</span></li>
+            </ul>
+          </div>
+        </section>
+
+        <!--Text Inputs Error Section-->
+        <section class="t-home__section__box">
+          <h3 class="t-home__sub-title">Input Input error</h3>
+          <form class="m-form" action="index.html" method="post">
+            <div class="m-form__row">
+              <input class="a-input__field a-input__field--error" id="text-input" type="text" name="text-input" placeholder="Text Input">
+            </div>
+          </form>
+          <div class="t-gray-box">
+            <ul class="t-gray-box-list">
+              <li><span>&lt;form class=<span class="vine-color">"m-form"</span>&gt;</li>
+              <li class="t-gray-box__item--margin"><span>&lt;input class=<span class="vine-color">"a-input__field a-input__field--error"</span>
+                  type=<span class="vine-color">"text"</span>
+                  placeholder= <span class="vine-color">"Text Input"</span>&gt;</span></li>
+              <li><span>&lt;/form&gt;</span></li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- File input Section-->
+        <section class="t-home__section__box">
+          <h3 class="t-home__sub-title">Input File</h3>
+          <form class="m-form" action="controller" method="post">
+            <div class="m-form__row">
+              <label class="a-input__field--label" for="image_upload">Choose file</label>
+              <input class="h-sr-only" id="image_upload" type="file" name="image_uploads" accept=".jpg, .jpeg, .png">
+            </div>
+            <!-- <div class="m-form_input-note">
+              <label for="image_uploads" class="a-input__field--label a-input__field--error">Choose file</label>
+              <p class="a-text--hint">This is a note about the field</p>
+            </div> -->
+          </form>
+          <div class="t-gray-box">
+            <ul class="t-gray-box-list ">
+              <li><span>&lt;form class=<span class="vine-color">"m-form"</span>&gt;</li>
+              <li class="t-gray-box__item--margin">
+                <span>&lt;label class=<span class="vine-color">"a-input__field--label"</span>
+                  for=<span class="vine-color">"image_upload"</span>
+                  &gt;</span>Choose file<span>&lt;/label&gt</span>
+              </li>
+              <li class="t-gray-box__item--margin"><span>&lt;input class=<span class="vine-color">"h-sr-only"</span>
+                  id=<span class="vine-color">"image_upload"</span>
+                  name=<span class="vine-color">"image_upload"</span>
+                  type= <span class="vine-color">"file"</span>
+                  accept= <span class="vine-color">".jpg, .jpeg, .png"</span>&gt;</span></li>
+              <li><span>&lt;/form&gt;</span></li>
+            </ul>
+          </div>
+        </section>
+
+        <!--Inputs Error -->
+        <section class="t-home__section__box">
+          <h3 class="t-home__sub-title">Input file error</h3>
+          <form class="m-form" action="index.html" method="post">
+            <div class="m-form__row">
+              <label class="a-input__field--label a-input__field--error" for="image_upload">Choose file</label>
+              <input class="h-sr-only" id="image_upload" type="file" name="image_upload" accept=".jpg, .jpeg, .png">
+            </div>
+          </form>
+          <div class="t-gray-box">
+            <ul class="t-gray-box-list ">
+              <li><span>&lt;form class=<span class="vine-color">"m-form"</span>&gt;</li>
+              <li class="t-gray-box__item--margin">
+                <span>&lt;label class=<span class="vine-color">"a-input__field--label a-input__field--error"</span>
+                  for=<span class="vine-color">"image_upload"</span>
+                  &gt;</span>Choose file<span>&lt;/label</span>
+              </li>
+              <li class="t-gray-box__item--margin"><span>&lt;input class=<span class="vine-color">"h-sr-only"</span>
+                id=<span class="vine-color">"image_upload"</span>
+                  name=<span class="vine-color">"image_upload"</span>
+                  type= <span class="vine-color">"file"</span>
+                  accept= <span class="vine-color">".jpg, .jpeg, .png"</span>&gt;</span>
+                </li>
+              <li><span>&lt;/form&gt;</span></li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- Text area -->
+        <section class="t-home__section__box">
+          <h3 class="t-home__sub-title">Text area</h3>
+          <form class="m-form" action="controller" method="post">
+            <div class="m-form__row">
+              <textarea class="a-text-area" id="text-area" name="text-area" rows="5" cols="35" maxlength="500" placeholder="Optional 500 characters max."></textarea>
+            </div>
+          </form>
+          <div class="t-gray-box">
+            <ul class="t-gray-box-list ">
+              <li><span>&lt;form class=<span class="vine-color">"m-form"</span>&gt;</li>
+              <li class="t-gray-box__item--margin">
+                <span>&lt;textarea class=<span class="vine-color">"a-text-area"</span>
+                  id=<span class="vine-color">"text-area"</span>
+                  rows=<span class="vine-color">"5"</span>
+                  cols=<span class="vine-color">"35"</span>
+                  maxlength=<span class="vine-color">"500"</span>
+                  placeholder=<span class="vine-color">"Optional 500 characters max"</span>&gt;<span>&lt;textarea&gt;</span>
+                </span>
+              </li>
+              <li><span>&lt;/form&gt;</span></li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- Checkbox -->
+        <section class="t-home__section__box">
+          <h3 class="t-home__sub-title">Checkbox</h3>
+          <form class="m-form">
+            <!-- <div class="input__row"> -->
+            <div class="p-atoms-input-wrapper">
+              <label class="a-checkbox" for="checkbox">
+                <input class="a-checkbox__input" id="checkbox" type="checkbox">
+                <svg class="a-checkbox__icon" height="20" viewBox="0 0 24 24" width="20">
+                  <use xlink:href="#icon-done"></use>
+                </svg>
+              </label>
+            </div>
+          </form>
+          <div class="t-gray-box">
+            <ul class="t-gray-box-list ">
+              <li><span>&lt;form class=<span class="vine-color">"m-form"</span>&gt;</li>
+              <li class="t-gray-box__item--margin">
+                <span>&lt;label class=<span class="vine-color">"a-checkbox"</span>
+                  for=<span class="vine-color">"checkbox"</span>
+                  &gt;</span>
+              </li>
+              <li class="t-gray-box__item--margin-2x"><span>&lt;input class=<span class="vine-color">"a-checkbox__input"</span>
+                  id=<span class="vine-color">"checkbox"</span>
+                  type=<span class="vine-color">"checkbox"</span>
+                  checked=<span class="vine-color">"checked"</span>
+                  &gt;</span>
+              </li>
+              <li class="t-gray-box__item--margin-2x"><span>&lt;svg class=<span class="vine-color">"a-checkbox__icon"</span>
+                  height=<span class="vine-color">"20"</span>
+                  width=<span class="vine-color">"20"</span>
+                  viewBox=<span class="vine-color">"0 0 24 24"</span>
+                  checked=<span class="vine-color">"checked"</span>
+                  &gt;</span> <span>&lt;/svg&gt;</span>
+              </li>
+              <li class="t-gray-box__item--margin"><span>&lt;/label&gt;</span></li>
+              <li><span>&lt;/form&gt;</span></li>
+            </ul>
+          </div>
+        </section>
+      </article>
+
+      <!-- Icons Section -->
+      <article id="icons-section" class="t-home__section atoms-icons-section">
+
+        <h2>05. Icons</h2>
+        <div class="">
+          <ul class="p-atoms-icons-list h-bare-list">
+            <li class="icons-list__item">
+              <!-- role="presentation" is giving me an error, by other hand role="document" nop, What should i do? -->
+              <!-- <svg class="icon" height="20" viewBox="0 0 24 24" width="20" role="presentation"> -->
+              <!-- <svg class="icon" height="20" viewBox="0 0 24 24" width="20" role="document"> -->
+              <svg class="a-icon" height="20" viewBox="0 0 24 24" width="20">
+                <use xlink:href="#icon-done"></use>
+              </svg>
+            </li>
+            <li class="icons-list__item">
+              <svg class="a-icon" height="20" viewBox="0 0 24 24" width="20">
+                <use xlink:href="#icon-add"></use>
+              </svg>
+            </li>
+            <li class="icons-list__item">
+              <svg class="a-icon" height="20" viewBox="0 0 24 24" width="20">
+                <use xlink:href="#icon-menu"></use>
+              </svg>
+            </li>
+            <li class="icons-list__item">
+              <svg class="a-icon" height="20" viewBox="0 0 24 24" width="20">
+                <use xlink:href="#icon-date-range"></use>
+              </svg>
+            </li>
+            <li class="icons-list__item">
+              <svg class="a-icon" height="20" viewBox="0 0 24 24" width="20">
+                <use xlink:href="#icon-delete"></use>
+              </svg>
+            </li>
+            <li class="icons-list__item">
+              <svg class="a-icon" height="20" viewBox="0 0 24 24" width="20">
+                <use xlink:href="#icon-favorite"></use>
+              </svg>
+            </li>
+            <li class="icons-list__item">
+              <svg class="a-icon" height="20" viewBox="0 0 24 24" width="20">
+                <use xlink:href="#icon-create"></use>
+              </svg>
+            </li>
+            <li class="icons-list__item">
+              <svg class="a-icon" height="20" viewBox="0 0 24 24" width="20">
+                <use xlink:href="#icon-search"></use>
+              </svg>
+            </li>
+
+          </ul>
+        </div>
+      </article>
+
+      <!-- Images Section -->
+
+      <article id="images-section" class="t-home__section">
+        <h2>06. Images</h2>
+
+        <!-- Avatar section -->
+        <section id="avatar-section" class="t-home__section__box">
+          <h3 class="t-home__sub-title">Avatar</h3>
+          <img class="a-avatar" src="https://via.placeholder.com/48x48" alt="Rounded avatar picture">
+          <div class="t-gray-box">
+            <ul class="t-gray-box-list ">
+              <!-- <li><span>&lt;div&gt; class=<span class="vine-color">"a-avatar-image"</span></li> -->
+              <li>
+                <span>&lt;img class=<span class="vine-color">"a-avatar"</span><span>&gt;</span>
+              </li>
+              <!-- <li><span>&lt;/div&gt;</span></li> -->
+            </ul>
+          </div>
+        </section>
+
+        <!-- thumbnails image -->
+        <section id="thumbnails-section" class="t-home__section__box">
+          <h3 class="t-home__sub-title">Thumbnails</h3>
+
+          <div class="p-atoms-image-wrapper">
+            <!-- <img class="a-image"
+                          src="assets/images/dolphins-small.jpg"
+                        /> -->
+            <img class="a-image" src="https://via.placeholder.com/600x400" />
+          </div>
+
+          <div class="t-gray-box">
+            <ul class="t-gray-box-list ">
+              <li><span>&lt;div&gt; class=<span class="vine-color">"p-atoms-image-wrapper"</span></li>
+              <li class="t-gray-box__item--margin">
+                <span>&lt;img class=<span class="vine-color">"a-image"</span><span>&gt;</span>
+              </li>
+              <li><span>&lt;/div&gt;</span></li>
+            </ul>
+          </div>
+        </section>
+      </article>
+
+      <!-- Texts Section -->
+
+      <article id="text-section" class="t-home__section">
+        <h2>07. Text</h2>
+        <!-- Headings -->
+        <!-- Heading Level 1 -->
+        <section id="heading-section" class="t-home__section__box">
+          <h3 class="t-home__sub-title">Heading Level 1</h3>
+          <h1 class="a-title">Create Goal</h1>
+          <!-- <img class="a-avatar" src="assets/images/dolphins-small.jpg" alt="Rounded avatar picture"> -->
+
+          <div class="t-gray-box">
+            <ul class="t-gray-box-list ">
+              <!-- <li><span>&lt;div&gt; class=<span class="vine-color">"a-avatar-image"</span></li> -->
+              <li>
+                <span>&lt;h1 class=<span class="vine-color">"a-title"</span>&gt;</span>Create Goal<span>&lt;/h1&gt;</span>
+              </li>
+              <!-- <li><span>&lt;/div&gt;</span></li> -->
+            </ul>
+          </div>
+        </section>
+
+
+        <!-- Heading Level 2 -->
+        <section id="avatar-section" class="t-home__section__box">
+          <h3 class="t-home__sub-title">Heading Level 2</h3>
+          <!-- <h2 class="a-sub-title">Discussion</h2> -->
+          <h2 class="a-title">Discussion</h2>
+          <!-- <img class="a-avatar" src="assets/images/dolphins-small.jpg" alt="Rounded avatar picture"> -->
+
+          <div class="t-gray-box">
+            <ul class="t-gray-box-list ">
+              <!-- <li><span>&lt;div&gt; class=<span class="vine-color">"a-avatar-image"</span></li> -->
+              <li>
+                <span>&lt;h2 class=<span class="vine-color">"a-title"</span>&gt;</span>Discussion<span>&lt;/h2&gt;</span>
+              </li>
+              <!-- <li><span>&lt;/div&gt;</span></li> -->
+            </ul>
+          </div>
+        </section>
+
+        <!--Heading Level 3 -->
+        <section id="avatar-section" class="t-home__section__box">
+          <h3 class="t-home__sub-title">Heading Level 3</h3>
+          <h3>Travel to New York</h3>
+          <!-- <img class="a-avatar" src="assets/images/dolphins-small.jpg" alt="Rounded avatar picture"> -->
+          <div class="t-gray-box">
+            <ul class="t-gray-box-list ">
+              <!-- <li><span>&lt;div&gt; class=<span class="vine-color">"a-avatar-image"</span></li> -->
+              <li>
+                <span>&lt;h3&gt;</span>Travel to New York<span>&lt;/h3&gt;</span>
+              </li>
+              <!-- <li><span>&lt;/div&gt;</span></li> -->
+            </ul>
+          </div>
+        </section>
+
+        <!--Post title  -->
+        <section id="avatar-section" class="t-home__section__box">
+          <h3 class="t-home__sub-title">Post title</h3>
+          <h1 class="a-post-title">Travel to New York</h1>
+          <!-- <img class="a-avatar" src="assets/images/dolphins-small.jpg" alt="Rounded avatar picture"> -->
+          <div class="t-gray-box">
+            <ul class="t-gray-box-list ">
+              <!-- <li><span>&lt;div&gt; class=<span class="vine-color">"a-avatar-image"</span></li> -->
+              <li>
+                <span>&lt;h1 class=<span class="vine-color">"a-post-title"</span>&gt;</span>Travel to New York<span>&lt;/h1&gt;</span>
+              </li>
+              <!-- <li><span>&lt;/div&gt;</span></li> -->
+            </ul>
+          </div>
+        </section>
+
+        <section id="error-text" class="t-home__section__box">
+          <h3 class="t-home__sub-title">error text</h3>
+          <span class="a-text--error">This is an error message</span>
+
+          <div class="t-gray-box">
+            <ul class="t-gray-box-list ">
+
+              <li>
+                <span>&lt;span class=<span class="vine-color">"a-text--error"</span><span>&gt;</span></span>This is an error message<span>&lt;/span&gt;</span>
+              </li>
+        
+            </ul>
+          </div>
+        </section>
+
+        <section id="hint-text" class="t-home__section__box">
+          <h3 class="t-home__sub-title">hint text</h3>
+          <span class="a-text--hint">Este es un texto de sugerencia</span>
+
+          <div class="t-gray-box">
+            <ul class="t-gray-box-list ">
+
+              <li>
+                <span>&lt;span class=<span class="vine-color">"a-text--hint"</span><span>&gt;</span></span>Este es un texto de sugerencia<span>&lt;/span&gt;</span>
+              </li>
+
+            </ul>
+          </div>
+        </section>
+
+      </article>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="t-home__footer">
+    <div class="t-home__wrapper h-flex-wrapper">
+      <div class="a-logo h-no-underline-text">
+        <a href="/"><span class="a-logo__text"><em>My</em> Bucket List - Style Guide</span></a>
+      </div>
+      <p>&copy; EPFL 2020</p>
+    </div>
+  </footer>
+
+</body>
+
+</html>

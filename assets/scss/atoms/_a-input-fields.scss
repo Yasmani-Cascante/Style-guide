@@ -1,0 +1,46 @@
+
+/*
+ * inputs fields
+ ****************************/
+
+  .a-input__field,
+  %a-input__field {
+    padding: 1em;
+    background: $white;
+    color: $gray-1;
+    border: 1px solid $white;
+    border-radius: 3px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.14);
+
+    // font-family: "Rubik", sans-serif;
+    // flex: 0 1 35rem;
+    // flex: 0 1 420px;
+    // width: 420px;
+    // font-size: inherit;
+    // width: 100%;
+    // box-sizing: border-box;
+    &::placeholder {
+      color: $gray-3;
+      }
+    &:active,
+    &:active,
+    &:focus {
+      outline: 1px solid $gray-4;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.14);
+    }
+    &--error {
+      border: 1px solid $secondary-color !important;
+    }
+  }
+
+  /*-------------------------------
+   * Media Querys
+   *------------------------------- */
+
+   /* Tablets */
+   @include tablet {
+      .a-input__field {
+        // flex: 1 0 auto;
+        width: 100%;
+      }
+    }
