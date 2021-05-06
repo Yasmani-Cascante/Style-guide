@@ -21,40 +21,40 @@
   <!-- SVG Files -->
   <svg style="display: none;">
     <defs>
-      <symbol id="icon-done" class="off">
+      <symbol id="icon-done" >
         <path d="M0 0h24v24H0z" fill="none" />
         <path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z" />
       </symbol>
-      <symbol id="icon-add" class="off">
+      <symbol id="icon-add">
         <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" />
         <path d="M0 0h24v24H0z" fill="none" />
       </symbol>
-      <symbol id="icon-delete" class="off">
+      <symbol id="icon-delete">
         <path d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z" />
         <path d="M0 0h24v24H0z" fill="none" />
       </symbol>
-      <symbol id="icon-search" class="off">
+      <symbol id="icon-search">
         <path
           d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z" />
-        <path d="M0 0h24v24H0z" fill="none" />
+        <path d="M0 0h24v24H0z"/>
       </symbol>
       <symbol id="icon-clear" class="off">
         <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z" />
-        <path d="M0 0h24v24H0z" fill="none" />
+        <path d="M0 0h24v24H0z"/>
       </symbol>
-      <symbol id="icon-favorite" class="off">
+      <symbol id="icon-favorite">
         <path d="M0 0h24v24H0z" fill="none" />
         <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
       </symbol>
-      <symbol id="icon-create" class="off">
+      <symbol id="icon-create">
         <path d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.39-.39-1.02-.39-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z" />
         <path d="M0 0h24v24H0z" fill="none" />
       </symbol>
-      <symbol id="icon-menu" class="off">
+      <symbol id="icon-menu">
         <path d="M0 0h24v24H0z" fill="none" />
         <path d="M3 20h20v-2H3v2zm0-5h20v-2H3v2zm0-7v2h20V6H3z" />
       </symbol>
-      <symbol id="icon-date-range" class="off">
+      <symbol id="icon-date-range">
         <path d="M9 11H7v2h2v-2zm4 0h-2v2h2v-2zm4 0h-2v2h2v-2zm2-7h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V9h14v11z" />
         <path d="M0 0h24v24H0z" fill="none" />
       </symbol>
@@ -69,9 +69,9 @@
       </div>
       <nav>
         <ul class="t-home__nav">
-          <li><a href="index.html">Atoms</a></li>
-          <li><a href="molecules.html">Molecules</a></li>
-          <li><a href="organisms.html">Organisms</a></li>
+          <li><a class="a-link" href="index.html">Atoms</a></li>
+          <li><a class="a-link" href="molecules.html">Molecules</a></li>
+          <li><a class="a-link" href="organisms.html">Organisms</a></li>
         </ul>
       </nav>
     </div>
@@ -426,7 +426,7 @@
           </form>
           <div class="t-gray-box">
             <ul class="t-gray-box-list">
-              <li><span>&lt;form class=<span class="vine-color">"m-form"</span>&gt;</li>
+              <li><span>&lt;form class=<span class="vine-color">"m-form"</span>&gt;</span></li>
               <li class="t-gray-box__item--margin"><span>&lt;input class=<span class="vine-color">"a-input__field"</span>
                   type=<span class="vine-color">"text"</span>
                   placeholder= <span class="vine-color">"Text Input"</span>&gt;</span></li>
@@ -440,12 +440,12 @@
           <h3 class="t-home__sub-title">Input Input error</h3>
           <form class="m-form" action="index.html" method="post">
             <div class="m-form__row">
-              <input class="a-input__field a-input__field--error" id="text-input" type="text" name="text-input" placeholder="Text Input">
+              <input class="a-input__field a-input__field--error" id="text-input-2" type="text" name="text-input-2" placeholder="Text Input">
             </div>
           </form>
           <div class="t-gray-box">
             <ul class="t-gray-box-list">
-              <li><span>&lt;form class=<span class="vine-color">"m-form"</span>&gt;</li>
+              <li><span>&lt;form class=<span class="vine-color">"m-form"</span>&gt;</span></li>
               <li class="t-gray-box__item--margin"><span>&lt;input class=<span class="vine-color">"a-input__field a-input__field--error"</span>
                   type=<span class="vine-color">"text"</span>
                   placeholder= <span class="vine-color">"Text Input"</span>&gt;</span></li>
@@ -462,18 +462,15 @@
               <label class="a-input__field--label" for="image_upload">Choose file</label>
               <input class="h-sr-only" id="image_upload" type="file" name="image_uploads" accept=".jpg, .jpeg, .png">
             </div>
-            <!-- <div class="m-form_input-note">
-              <label for="image_uploads" class="a-input__field--label a-input__field--error">Choose file</label>
-              <p class="a-text--hint">This is a note about the field</p>
-            </div> -->
+
           </form>
           <div class="t-gray-box">
             <ul class="t-gray-box-list ">
-              <li><span>&lt;form class=<span class="vine-color">"m-form"</span>&gt;</li>
+              <li><span>&lt;form class=<span class="vine-color">"m-form"</span>&gt;</span></li>
               <li class="t-gray-box__item--margin">
                 <span>&lt;label class=<span class="vine-color">"a-input__field--label"</span>
                   for=<span class="vine-color">"image_upload"</span>
-                  &gt;</span>Choose file<span>&lt;/label&gt</span>
+                  &gt;</span>Choose file<span>&lt;/label&gt;</span>
               </li>
               <li class="t-gray-box__item--margin"><span>&lt;input class=<span class="vine-color">"h-sr-only"</span>
                   id=<span class="vine-color">"image_upload"</span>
@@ -491,12 +488,12 @@
           <form class="m-form" action="index.html" method="post">
             <div class="m-form__row">
               <label class="a-input__field--label a-input__field--error" for="image_upload">Choose file</label>
-              <input class="h-sr-only" id="image_upload" type="file" name="image_upload" accept=".jpg, .jpeg, .png">
+              <input class="h-sr-only" id="image_upload-2" type="file" name="image_upload-2" accept=".jpg, .jpeg, .png">
             </div>
           </form>
           <div class="t-gray-box">
             <ul class="t-gray-box-list ">
-              <li><span>&lt;form class=<span class="vine-color">"m-form"</span>&gt;</li>
+              <li><span>&lt;form class=<span class="vine-color">"m-form"</span>&gt;</span></li>
               <li class="t-gray-box__item--margin">
                 <span>&lt;label class=<span class="vine-color">"a-input__field--label a-input__field--error"</span>
                   for=<span class="vine-color">"image_upload"</span>
@@ -523,7 +520,7 @@
           </form>
           <div class="t-gray-box">
             <ul class="t-gray-box-list ">
-              <li><span>&lt;form class=<span class="vine-color">"m-form"</span>&gt;</li>
+              <li><span>&lt;form class=<span class="vine-color">"m-form"</span>&gt;</span></li>
               <li class="t-gray-box__item--margin">
                 <span>&lt;textarea class=<span class="vine-color">"a-text-area"</span>
                   id=<span class="vine-color">"text-area"</span>
@@ -554,7 +551,7 @@
           </form>
           <div class="t-gray-box">
             <ul class="t-gray-box-list ">
-              <li><span>&lt;form class=<span class="vine-color">"m-form"</span>&gt;</li>
+              <li><span>&lt;form class=<span class="vine-color">"m-form"</span>&gt;</span></li>
               <li class="t-gray-box__item--margin">
                 <span>&lt;label class=<span class="vine-color">"a-checkbox"</span>
                   for=<span class="vine-color">"checkbox"</span>
@@ -587,9 +584,7 @@
         <div class="">
           <ul class="p-atoms-icons-list h-bare-list">
             <li class="icons-list__item">
-              <!-- role="presentation" is giving me an error, by other hand role="document" nop, What should i do? -->
-              <!-- <svg class="icon" height="20" viewBox="0 0 24 24" width="20" role="presentation"> -->
-              <!-- <svg class="icon" height="20" viewBox="0 0 24 24" width="20" role="document"> -->
+
               <svg class="a-icon" height="20" viewBox="0 0 24 24" width="20">
                 <use xlink:href="#icon-done"></use>
               </svg>
@@ -647,7 +642,7 @@
             <ul class="t-gray-box-list ">
               <!-- <li><span>&lt;div&gt; class=<span class="vine-color">"a-avatar-image"</span></li> -->
               <li>
-                <span>&lt;img class=<span class="vine-color">"a-avatar"</span><span>&gt;</span>
+                <span>&lt;img class=<span class="vine-color">"a-avatar"</span>&gt;</span>
               </li>
               <!-- <li><span>&lt;/div&gt;</span></li> -->
             </ul>
@@ -659,17 +654,14 @@
           <h3 class="t-home__sub-title">Thumbnails</h3>
 
           <div class="p-atoms-image-wrapper">
-            <!-- <img class="a-image"
-                          src="assets/images/dolphins-small.jpg"
-                        /> -->
-            <img class="a-image" src="https://via.placeholder.com/600x400" />
+            <img class="a-image" src="https://via.placeholder.com/600x400" alt="Image with gray background and dimensions 600 width and 400 height"/>
           </div>
 
           <div class="t-gray-box">
             <ul class="t-gray-box-list ">
-              <li><span>&lt;div&gt; class=<span class="vine-color">"p-atoms-image-wrapper"</span></li>
+              <li><span>&lt;div&gt; class=<span class="vine-color">"p-atoms-image-wrapper"</span></span></li>
               <li class="t-gray-box__item--margin">
-                <span>&lt;img class=<span class="vine-color">"a-image"</span><span>&gt;</span>
+                <span>&lt;img class=<span class="vine-color">"a-image"</span>&gt;</span>
               </li>
               <li><span>&lt;/div&gt;</span></li>
             </ul>
@@ -685,7 +677,7 @@
         <!-- Heading Level 1 -->
         <section id="heading-section" class="t-home__section__box">
           <h3 class="t-home__sub-title">Heading Level 1</h3>
-          <h1 class="a-title">Create Goal</h1>
+          <h2 class="alpha a-title">Create Goal</h2>
           <!-- <img class="a-avatar" src="assets/images/dolphins-small.jpg" alt="Rounded avatar picture"> -->
 
           <div class="t-gray-box">
@@ -701,7 +693,7 @@
 
 
         <!-- Heading Level 2 -->
-        <section id="avatar-section" class="t-home__section__box">
+        <section class="t-home__section__box">
           <h3 class="t-home__sub-title">Heading Level 2</h3>
           <!-- <h2 class="a-sub-title">Discussion</h2> -->
           <h2 class="a-title">Discussion</h2>
@@ -719,7 +711,7 @@
         </section>
 
         <!--Heading Level 3 -->
-        <section id="avatar-section" class="t-home__section__box">
+        <section class="t-home__section__box">
           <h3 class="t-home__sub-title">Heading Level 3</h3>
           <h3>Travel to New York</h3>
           <!-- <img class="a-avatar" src="assets/images/dolphins-small.jpg" alt="Rounded avatar picture"> -->
@@ -735,9 +727,9 @@
         </section>
 
         <!--Post title  -->
-        <section id="avatar-section" class="t-home__section__box">
+        <section class="t-home__section__box">
           <h3 class="t-home__sub-title">Post title</h3>
-          <h1 class="a-post-title">Travel to New York</h1>
+          <h2 class="a-post-title">Travel to New York</h2>
           <!-- <img class="a-avatar" src="assets/images/dolphins-small.jpg" alt="Rounded avatar picture"> -->
           <div class="t-gray-box">
             <ul class="t-gray-box-list ">
@@ -760,7 +752,7 @@
               <li>
                 <span>&lt;span class=<span class="vine-color">"a-text--error"</span><span>&gt;</span></span>This is an error message<span>&lt;/span&gt;</span>
               </li>
-        
+
             </ul>
           </div>
         </section>

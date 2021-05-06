@@ -10,7 +10,11 @@
   font-size: 1.5rem;
   border: 0;
   cursor: pointer;
-  text-transform: capitalize;
+  // text-transform: capitalize;
+  &:hover,
+  &:focus {
+    text-decoration: underline;
+  }
 }
 
 .a-link--primary {

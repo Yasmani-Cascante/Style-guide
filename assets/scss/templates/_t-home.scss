@@ -52,6 +52,10 @@
    &__links {
     font-size: inherit;
     color: inherit;
+    &:hover,
+    &:focus {
+      text-decoration: underline;
+    }
    }
 
    &__sub-list {
@@ -143,6 +147,9 @@
       margin-left: $pulse-6x;
       }
       &-7x {
+      margin-left: $pulse-7x;
+      }
+      &-8x {
       margin-left: $pulse-7x;
       }
      }
