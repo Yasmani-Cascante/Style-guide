@@ -27,9 +27,9 @@
   -webkit-border-radius: 3px;
      -moz-border-radius: 3px;
           border-radius: 3px;
-  -webkit-box-shadow: 0px 0px 10px rgba(0,0,0, 0.14);
-     -moz-box-shadow: 0px 0px 10px rgba(0,0,0, 0.14);
-          box-shadow: 0px 0px 10px rgba(0,0,0, 0.14);
+  -webkit-box-shadow: 0 0 10px rgba(0,0,0, 0.14);
+     -moz-box-shadow: 0 0 10px rgba(0,0,0, 0.14);
+          box-shadow: 0 0 10px rgba(0,0,0, 0.14);
   margin: 0 0 3.2rem 0;
   font-size: 1rem; /*10px*/
 }
@@ -89,12 +89,7 @@
    display: flex;
    align-items: center;
    border-top: 1px solid #bbc1b6;
-   // padding: 1.6rem 0 1.6rem 1.6rem;
    padding: 1.6em;
-    // height: 100%;
-    // .a-icon {
-    //   fill: $primary-color;
-    // }
     &__date {
       margin: 0;
       text-transform: uppercase;
@@ -109,7 +104,6 @@
 
  .m-card__form__footer .a-btn {
    display: flex;
-   // justify-content: center;
    align-items: center;
   padding: 1.4em;
    border: none;
@@ -143,7 +137,6 @@
 /* tablets */
 @include tablet {
   .m-cards {
-    // margin-right: -$pulse-2x;
     margin: 0 -3.2rem -3.2rem 0;
   }
 
@@ -185,8 +178,6 @@
   width: -webkit-calc(33.33% - #{$pulse-2x});
   width: -moz-calc(33.33% - #{$pulse-2x});
   width: calc(33.33% - #{$pulse-2x});
-  // width: 30%;
-
   }
 
 }

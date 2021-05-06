@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="en" class="no-js">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -14,14 +13,14 @@
   <!-- [if IE]>
       <link rel="stylesheet" href="assets/css/universal-ie9-css.css">
     <![endif]-->
-
+  <script src="assets/js/modernizr-custom.js"></script>
 </head>
 
 <body>
   <!-- SVG Files -->
   <svg style="display: none;">
     <defs>
-      <symbol id="icon-done" >
+      <symbol id="icon-done">
         <path d="M0 0h24v24H0z" fill="none" />
         <path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z" />
       </symbol>
@@ -36,11 +35,11 @@
       <symbol id="icon-search">
         <path
           d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z" />
-        <path d="M0 0h24v24H0z"/>
+        <path d="M0 0h24v24H0z" />
       </symbol>
       <symbol id="icon-clear" class="off">
         <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z" />
-        <path d="M0 0h24v24H0z"/>
+        <path d="M0 0h24v24H0z" />
       </symbol>
       <symbol id="icon-favorite">
         <path d="M0 0h24v24H0z" fill="none" />
@@ -80,9 +79,7 @@
   <!-- main content -->
   <main class="t-home__body">
     <div class="t-home__wrapper">
-
       <!-- Atoms Main menu -->
-      <!-- <section class="t-section"> -->
       <h1>Atoms</h1>
       <ol class="t-home__menu">
         <li><a class="t-home__menu__links" href="#colors-section">Palette</a></li>
@@ -100,15 +97,15 @@
         <li><a class="t-home__menu__links" href="#text-section">Text</a>
           <ul class="t-home__menu__sub-list">
             <li><a class="t-home__menu__links" href="#heading-section">Headings</a></li>
-            <li><a class="t-home__menu__links" href="#error-text">Error text</a></li>
-            <li><a class="t-home__menu__links" href="#hint-text">Hint text</a></li>
+            <li><a class="t-home__menu__links" href="#error-text-section">Error text</a></li>
+            <li><a class="t-home__menu__links" href="#hint-text-section">Hint text</a></li>
           </ul>
         </li>
       </ol>
       <!-- </section> -->
 
       <!-- Palette Section -->
-      <article id="colors-section" class="t-home__section">
+      <article class="t-home__section" id="colors-section">
         <h2>01. Palette</h2>
         <div class="p-atoms-palette-wrapper">
           <ul class="p-atoms-palette-colors-list h-bare-list">
@@ -149,16 +146,14 @@
       </article>
 
       <!-- Typhograghy Section -->
-      <article id="typography-section" class="t-home__section p-atoms-typhograghy-section">
+      <article class="t-home__section p-atoms-typhograghy-section" id="typography-section">
         <h2>02. Typography</h2>
-
         <div class="p-atoms-typography-wrapper">
           <div class="p-atoms-typography">
             <div class="p-atoms-typography__glyph">
               <h3 class="t-home__sub-title">glyph</h3>
               <span>Aa</span>
             </div>
-
             <div class="p-atoms-typography__weights">
               <h3 class="t-home__sub-title">Weights</h3>
               <ul class="typography-weights__list h-bare-list">
@@ -168,14 +163,12 @@
                 <li>Bold italic</li>
               </ul>
             </div>
-
             <div class="t-gray-box h-clear-floats">
               <ul class="t-gray-box-list ">
                 <li>font-family: <span>'Rubik', sans-serif;</span></li>
               </ul>
             </div>
           </div>
-
           <div class="p-atoms-typography-sizes">
             <ul class="p-atoms-typography-sizes__list ">
               <li>
@@ -298,9 +291,8 @@
       </article>
 
       <!-- Buttons Section -->
-      <article id="buttons-section" class="t-home__section">
+      <article class="t-home__section" id="buttons-section">
         <h2>03. Buttons</h2>
-
         <!-- Default button -->
         <section class="t-home__section__box">
           <h3 class="t-home__sub-title">Default button</h3>
@@ -308,6 +300,7 @@
             <button class="a-btn">button</button>
             <a class="a-btn">link button</a>
           </div>
+
           <div class="t-gray-box">
             <ul class="t-gray-box-list">
               <li>
@@ -328,6 +321,7 @@
         <section class="t-home__section__box">
           <h3 class="t-home__sub-title">Primary button</h3>
           <button class="a-btn-primary">Primary button</button>
+
           <div class="t-gray-box">
             <ul class="t-gray-box-list ">
               <li><span>&lt;button class=<span class="vine-color">"a-btn-primary"</span>
@@ -344,6 +338,7 @@
           <div class="">
             <button class="a-btn-secondary">Secondary button</button>
           </div>
+
           <div class="t-gray-box">
             <ul class="t-gray-box-list ">
               <li><span>&lt;button class=<span class="vine-color">"a-btn-secondary"</span>
@@ -360,6 +355,7 @@
           <div class="">
             <button class="a-btn-warning">Warning button</button>
           </div>
+
           <div class="t-gray-box">
             <ul class="t-gray-box-list ">
               <li><span>&lt;button class=<span class="vine-color">"a-btn-warning"</span>
@@ -371,15 +367,12 @@
         </section>
       </article>
 
-
       <!-- Links Section -->
-      <article id="links-section" class="t-home__section">
+      <article class="t-home__section" id="links-section">
         <h2>04. Links</h2>
-
         <!-- Default links -->
         <section class="t-home__section__box">
           <h3 class="t-home__sub-title">Default links</h3>
-
           <a class="a-link--primary" href="#">I'am a link</a>
 
           <div class="t-gray-box">
@@ -397,6 +390,7 @@
         <section class="t-home__section__box">
           <h3 class="t-home__sub-title">text link</h3>
           <a class="a-link" href="#">I'am a link too</a>
+
           <div class="t-gray-box">
             <ul class="t-gray-box-list ">
               <li>
@@ -407,23 +401,20 @@
             </ul>
           </div>
         </section>
-
       </article>
 
       <!-- Form Elements Section -->
-      <article id="form-elements-section" class="t-home__section">
+      <article class="t-home__section" id="form-elements-section">
         <h2>04. Form Elements</h2>
-
-        <!-- Text input Section-->
+        <!-- Text input-->
         <section class="t-home__section__box">
           <h3 class="t-home__sub-title">Text input</h3>
           <form class="m-form" action="index.html" method="post">
-
             <div class="m-form__row">
-              <!-- <label for="text-input" class="input__label">Input label</label> -->
               <input class="a-input__field" id="text-input" type="text" name="text-input" placeholder="Text Input">
             </div>
           </form>
+
           <div class="t-gray-box">
             <ul class="t-gray-box-list">
               <li><span>&lt;form class=<span class="vine-color">"m-form"</span>&gt;</span></li>
@@ -435,7 +426,7 @@
           </div>
         </section>
 
-        <!--Text Inputs Error Section-->
+        <!--Text Inputs Error-->
         <section class="t-home__section__box">
           <h3 class="t-home__sub-title">Input Input error</h3>
           <form class="m-form" action="index.html" method="post">
@@ -443,6 +434,7 @@
               <input class="a-input__field a-input__field--error" id="text-input-2" type="text" name="text-input-2" placeholder="Text Input">
             </div>
           </form>
+
           <div class="t-gray-box">
             <ul class="t-gray-box-list">
               <li><span>&lt;form class=<span class="vine-color">"m-form"</span>&gt;</span></li>
@@ -454,7 +446,7 @@
           </div>
         </section>
 
-        <!-- File input Section-->
+        <!-- File input-->
         <section class="t-home__section__box">
           <h3 class="t-home__sub-title">Input File</h3>
           <form class="m-form" action="controller" method="post">
@@ -462,8 +454,8 @@
               <label class="a-input__field--label" for="image_upload">Choose file</label>
               <input class="h-sr-only" id="image_upload" type="file" name="image_uploads" accept=".jpg, .jpeg, .png">
             </div>
-
           </form>
+
           <div class="t-gray-box">
             <ul class="t-gray-box-list ">
               <li><span>&lt;form class=<span class="vine-color">"m-form"</span>&gt;</span></li>
@@ -491,6 +483,7 @@
               <input class="h-sr-only" id="image_upload-2" type="file" name="image_upload-2" accept=".jpg, .jpeg, .png">
             </div>
           </form>
+
           <div class="t-gray-box">
             <ul class="t-gray-box-list ">
               <li><span>&lt;form class=<span class="vine-color">"m-form"</span>&gt;</span></li>
@@ -500,11 +493,11 @@
                   &gt;</span>Choose file<span>&lt;/label</span>
               </li>
               <li class="t-gray-box__item--margin"><span>&lt;input class=<span class="vine-color">"h-sr-only"</span>
-                id=<span class="vine-color">"image_upload"</span>
+                  id=<span class="vine-color">"image_upload"</span>
                   name=<span class="vine-color">"image_upload"</span>
                   type= <span class="vine-color">"file"</span>
                   accept= <span class="vine-color">".jpg, .jpeg, .png"</span>&gt;</span>
-                </li>
+              </li>
               <li><span>&lt;/form&gt;</span></li>
             </ul>
           </div>
@@ -518,6 +511,7 @@
               <textarea class="a-text-area" id="text-area" name="text-area" rows="5" cols="35" maxlength="500" placeholder="Optional 500 characters max."></textarea>
             </div>
           </form>
+
           <div class="t-gray-box">
             <ul class="t-gray-box-list ">
               <li><span>&lt;form class=<span class="vine-color">"m-form"</span>&gt;</span></li>
@@ -549,6 +543,7 @@
               </label>
             </div>
           </form>
+
           <div class="t-gray-box">
             <ul class="t-gray-box-list ">
               <li><span>&lt;form class=<span class="vine-color">"m-form"</span>&gt;</span></li>
@@ -578,13 +573,12 @@
       </article>
 
       <!-- Icons Section -->
-      <article id="icons-section" class="t-home__section atoms-icons-section">
+      <article class="t-home__section atoms-icons-section" id="icons-section">
 
         <h2>05. Icons</h2>
         <div class="">
           <ul class="p-atoms-icons-list h-bare-list">
             <li class="icons-list__item">
-
               <svg class="a-icon" height="20" viewBox="0 0 24 24" width="20">
                 <use xlink:href="#icon-done"></use>
               </svg>
@@ -624,37 +618,32 @@
                 <use xlink:href="#icon-search"></use>
               </svg>
             </li>
-
           </ul>
         </div>
       </article>
 
       <!-- Images Section -->
-
-      <article id="images-section" class="t-home__section">
+      <article class="t-home__section" id="images-section">
         <h2>06. Images</h2>
-
         <!-- Avatar section -->
-        <section id="avatar-section" class="t-home__section__box">
+        <section class="t-home__section__box" id="avatar-section">
           <h3 class="t-home__sub-title">Avatar</h3>
           <img class="a-avatar" src="https://via.placeholder.com/48x48" alt="Rounded avatar picture">
+
           <div class="t-gray-box">
             <ul class="t-gray-box-list ">
-              <!-- <li><span>&lt;div&gt; class=<span class="vine-color">"a-avatar-image"</span></li> -->
               <li>
                 <span>&lt;img class=<span class="vine-color">"a-avatar"</span>&gt;</span>
               </li>
-              <!-- <li><span>&lt;/div&gt;</span></li> -->
             </ul>
           </div>
         </section>
 
         <!-- thumbnails image -->
-        <section id="thumbnails-section" class="t-home__section__box">
+        <section class="t-home__section__box" id="thumbnails-section">
           <h3 class="t-home__sub-title">Thumbnails</h3>
-
           <div class="p-atoms-image-wrapper">
-            <img class="a-image" src="https://via.placeholder.com/600x400" alt="Image with gray background and dimensions 600 width and 400 height"/>
+            <img class="a-image" src="https://via.placeholder.com/600x400" alt="Image with gray background and dimensions 600 width and 400 height" />
           </div>
 
           <div class="t-gray-box">
@@ -670,23 +659,19 @@
       </article>
 
       <!-- Texts Section -->
-
-      <article id="text-section" class="t-home__section">
+      <article class="t-home__section" id="text-section">
         <h2>07. Text</h2>
         <!-- Headings -->
         <!-- Heading Level 1 -->
-        <section id="heading-section" class="t-home__section__box">
+        <section class="t-home__section__box" id="heading-section">
           <h3 class="t-home__sub-title">Heading Level 1</h3>
           <h2 class="alpha a-title">Create Goal</h2>
-          <!-- <img class="a-avatar" src="assets/images/dolphins-small.jpg" alt="Rounded avatar picture"> -->
 
           <div class="t-gray-box">
             <ul class="t-gray-box-list ">
-              <!-- <li><span>&lt;div&gt; class=<span class="vine-color">"a-avatar-image"</span></li> -->
               <li>
                 <span>&lt;h1 class=<span class="vine-color">"a-title"</span>&gt;</span>Create Goal<span>&lt;/h1&gt;</span>
               </li>
-              <!-- <li><span>&lt;/div&gt;</span></li> -->
             </ul>
           </div>
         </section>
@@ -695,17 +680,13 @@
         <!-- Heading Level 2 -->
         <section class="t-home__section__box">
           <h3 class="t-home__sub-title">Heading Level 2</h3>
-          <!-- <h2 class="a-sub-title">Discussion</h2> -->
           <h2 class="a-title">Discussion</h2>
-          <!-- <img class="a-avatar" src="assets/images/dolphins-small.jpg" alt="Rounded avatar picture"> -->
 
           <div class="t-gray-box">
             <ul class="t-gray-box-list ">
-              <!-- <li><span>&lt;div&gt; class=<span class="vine-color">"a-avatar-image"</span></li> -->
               <li>
                 <span>&lt;h2 class=<span class="vine-color">"a-title"</span>&gt;</span>Discussion<span>&lt;/h2&gt;</span>
               </li>
-              <!-- <li><span>&lt;/div&gt;</span></li> -->
             </ul>
           </div>
         </section>
@@ -714,14 +695,12 @@
         <section class="t-home__section__box">
           <h3 class="t-home__sub-title">Heading Level 3</h3>
           <h3>Travel to New York</h3>
-          <!-- <img class="a-avatar" src="assets/images/dolphins-small.jpg" alt="Rounded avatar picture"> -->
+
           <div class="t-gray-box">
             <ul class="t-gray-box-list ">
-              <!-- <li><span>&lt;div&gt; class=<span class="vine-color">"a-avatar-image"</span></li> -->
               <li>
                 <span>&lt;h3&gt;</span>Travel to New York<span>&lt;/h3&gt;</span>
               </li>
-              <!-- <li><span>&lt;/div&gt;</span></li> -->
             </ul>
           </div>
         </section>
@@ -730,44 +709,38 @@
         <section class="t-home__section__box">
           <h3 class="t-home__sub-title">Post title</h3>
           <h2 class="a-post-title">Travel to New York</h2>
-          <!-- <img class="a-avatar" src="assets/images/dolphins-small.jpg" alt="Rounded avatar picture"> -->
+
           <div class="t-gray-box">
             <ul class="t-gray-box-list ">
-              <!-- <li><span>&lt;div&gt; class=<span class="vine-color">"a-avatar-image"</span></li> -->
               <li>
                 <span>&lt;h1 class=<span class="vine-color">"a-post-title"</span>&gt;</span>Travel to New York<span>&lt;/h1&gt;</span>
               </li>
-              <!-- <li><span>&lt;/div&gt;</span></li> -->
             </ul>
           </div>
         </section>
 
-        <section id="error-text" class="t-home__section__box">
+        <section class="t-home__section__box" id="error-text-section">
           <h3 class="t-home__sub-title">error text</h3>
           <span class="a-text--error">This is an error message</span>
 
           <div class="t-gray-box">
             <ul class="t-gray-box-list ">
-
               <li>
                 <span>&lt;span class=<span class="vine-color">"a-text--error"</span><span>&gt;</span></span>This is an error message<span>&lt;/span&gt;</span>
               </li>
-
             </ul>
           </div>
         </section>
 
-        <section id="hint-text" class="t-home__section__box">
+        <section class="t-home__section__box" id="hint-text-section">
           <h3 class="t-home__sub-title">hint text</h3>
           <span class="a-text--hint">Este es un texto de sugerencia</span>
 
           <div class="t-gray-box">
             <ul class="t-gray-box-list ">
-
               <li>
                 <span>&lt;span class=<span class="vine-color">"a-text--hint"</span><span>&gt;</span></span>Este es un texto de sugerencia<span>&lt;/span&gt;</span>
               </li>
-
             </ul>
           </div>
         </section>

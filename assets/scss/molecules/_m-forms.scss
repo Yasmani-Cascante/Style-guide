@@ -29,13 +29,11 @@
       margin: 2rem 0 0 0;
       .a-link--primary {
           flex: 1 0 10rem;
-          // margin-right: 4rem;
         }
         .a-btn-primary {
           width: 100%;
         }
     }
-
     .a-text--hint {
        display: block;
        margin-top: 1rem;
@@ -46,7 +44,6 @@
 }
 
 .m-form__checkbox-password {
-    // @extend %m-form__row;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -59,9 +56,6 @@
 
    /* Tablets */
    @include tablet {
-      // .btn--outlined {
-      //   width: 12em;
-      // }
       .m-form {
         &__btn-login {
           margin-left: 18rem;
@@ -69,7 +63,6 @@
         .m-form__row {
           flex-direction: row;
           justify-content: space-between;
-          // flex-wrap: nowrap;
         }
         .a-text--error {
           margin-left: 18rem;
@@ -82,7 +75,6 @@
       .m-form__footer {
         .a-link--primary {
           flex: 1 0 18rem;
-          // margin-right: 13rem;
         }
       }
     }
