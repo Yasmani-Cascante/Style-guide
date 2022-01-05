@@ -1,2 +1,2 @@
 
-Course project in development.
+Style Guide, atomic design proyect.
